@@ -848,7 +848,6 @@ class King(Piece):
             black_img_url (str): path to black King png
 
     """
-
     white_img_url = 'pieces/w_king_png_shadow_128px.png'
     black_img_url = 'pieces/b_king_png_shadow_128px.png'
     
