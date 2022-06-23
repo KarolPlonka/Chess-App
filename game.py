@@ -890,7 +890,7 @@ class Game(object):
 
         return [[board[y][x] for x in range(8)] for y in range (8)]
 
-    def mege_print(self, board): #do wyjebki później
+    def mege_print(self, board):
         
         string = ""
         for y in range(8):
