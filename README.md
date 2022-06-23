@@ -27,7 +27,7 @@ Project is created with:
 ![Alt text](images/CHECKMATE.png)
 
 ## Setup
-* Option 1 - Download [EXE file](Chess_EXE_file/Chess-App.zip), extract all files, then run ```chess_main.exe```. Now you can start playing!
+* Option 1 - Download [EXE file](Chess_EXE_file), extract all files, then run ```chess_main.exe```. Now you can start playing!
 * Option 2 - Download repository and run chess_main.py using Python.
 
 
