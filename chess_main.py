@@ -1,5 +1,4 @@
 from graphics import *
-from time import sleep
 from game import Game
 from pieces import *
 
