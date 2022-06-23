@@ -1,7 +1,7 @@
 from graphics import *
 from math import log
 from time import sleep
-from Move import Move
+from move import move
 
 
 class Piece():
