@@ -1,15 +1,23 @@
 from graphics import *
 class Move(object):
+
+    """!
+        @brief Used to display available     moves that will be represented as dots on a board.
+
+        @param x (int): x coordinate of the move
+        @param y (int): y coordinate of the move
+        @param win (graphics.GraphWin): windows in which the move will be drawn
+
+        @param
+        type (str)
+        Avalible types:
+            None (standard move), 'takes', 'castle', 'en_passant'
+
+        @param castle_way (str): 'long' or 'short' 
+    """
+
     standard_color = 'grey'
     takes_color = color_rgb(225, 78, 102)
-
-    """
-        Avalible types are:
-            None (standard move)
-            'takes'
-            'castle'
-            'en_passant'
-    """
 
     def __init__(self, y, x, win, type = None, castle_way = None):
         self.y = y
@@ -24,6 +32,10 @@ class Move(object):
 
     @type.setter
     def type(self, type):
+        """!
+        @brief Set move image based on it type.
+        @param type (str): Type of the move 
+        """
         if type == None or type == 'castle':
             self.img = Circle(Point(self.x * 100 + 50,self.y * 100 + 50), 15)
             self.img.setFill(Move.standard_color)
@@ -44,9 +56,15 @@ class Move(object):
         
 
     def draw_move(self):
+        """!
+        @brief Draw the move based on cooridnates and type
+        """
         self.img.draw(self.win)
 
     def undraw_move(self):
+        """!
+        @brief Undraw the move
+        """
         if self.img != None:
             self.img.undraw()
         else:

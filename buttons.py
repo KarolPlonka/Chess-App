@@ -1,6 +1,10 @@
 from graphics import *
 
 class Button():
+    """!
+    @brief Abstarct class for all buttons the inherit from.
+    """
+
     disabled_color = color_rgb(116, 100, 116)
 
     def __init__(self, win, c1, c2, size, m, start_x, start_y,):
@@ -55,6 +59,10 @@ class Button():
 
 
 class prevButton(Button):
+    """!
+    @brief Button used the forward the position by one move.
+    """
+
     def __init__(self, win, c1, c2, size, m, start_x, start_y):
         super().__init__(win, c1, c2, size, m, start_x, start_y)
         
@@ -77,6 +85,10 @@ class prevButton(Button):
 
 
 class nextButton(Button):
+    """!
+    @brief Button used the undo the position by one move.
+    """
+
     def __init__(self, win, c1, c2, size, m, start_x, start_y):
         super().__init__(win, c1, c2, size, m, start_x, start_y)
 
@@ -98,6 +110,10 @@ class nextButton(Button):
         self.button_parameters()
 
 class RestorePosition(Button):
+    """!
+    @brief Button used the restore the position.
+    """
+
     def __init__(self, win, c1, c2, m, start_x, end_x, start_y, end_y, txt):
         self.win = win
         self.is_active = False

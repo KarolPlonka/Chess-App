@@ -1,23 +1,22 @@
 from graphics import *
 from math import log
 from time import sleep
-from move import Move
+from Move import Move
 
 
 class Piece():
-    """
-        Description:
-            abstract class, whre from every piece class inherits
 
-        Args:
-            pormotion_bg_color (str): color specifier string for backgroud of poromition window
 
-            color (str): color of the piece 'black' or 'white'
-            img_url (str): path to piece png file
-            y (int): vertical coordinate of piece
-            x (int): horizontal coordinate of piece
-            win (GraphWin): window in which game is displayed
+    """!
+        @brief abstract class, where from every piece class inherits
 
+        @param pormotion_bg_color (str): color specifier string for backgroud of poromition window
+
+        @param color (str): color of the piece 'black' or 'white'
+        @param img_url (str): path to piece png file
+        @param y (int): vertical coordinate of piece
+        @param x (int): horizontal coordinate of piece
+        @param win (GraphWin): window in which game is displayed
     """
 
     pormotion_bg_color = color_rgb(244, 181, 252)
@@ -37,9 +36,8 @@ class Piece():
 
     @color.setter
     def color(self, color):
-        """
-        Description:
-            sets value of color
+        """!
+        @brief sets value of color
         """
         if color == 'white':
             self._color = 'white'
@@ -49,15 +47,13 @@ class Piece():
             raise ValueError("Color must be black or white")
 
     def draw_piece(self, y = None, x = None):
-        """
-        Description:
-            undraws piece using draw() method from graphics.py
+        """!
+        @brief undraws piece using draw() method from graphics.py
 
-        Parameters:
-            y (int): vertical coordinate of piece
-            x (int): horizontal coordinate of piece
-        Raises:
-            ValueError when image is already drawn
+        @param y (int): vertical coordinate of piece
+        @param x (int): horizontal coordinate of piece
+
+        @exception ValueError when image is already drawn
 
         
         """
@@ -72,12 +68,10 @@ class Piece():
             raise ValueError("Image is already drawn, try move_piece")
         
     def undraw_piece(self):
-        """
-        Description:
-            undraws piece using undraw() method from graphics.py 
+        """!
+        @brief undraws piece using undraw() method from graphics.py 
 
-        Raises:
-            ValueError when there is no image to undraw
+        @exception ValueError when there is no image to undraw
 
         
         """
@@ -88,13 +82,11 @@ class Piece():
             raise ValueError("There is no image to undraw")
 
     def move_piece(self, y, x):
-        """
-        Description:
-            moves piece img using move() method, changes actual coordinates 
+        """!
+        @brief moves piece img using move() method, changes actual coordinates 
 
-        Parameters:
-            y (int): vertical coordinate of where piece should be moved
-            x (int): horizontal coordinate of piece should be moved
+        @param y (int): vertical coordinate of where piece should be moved
+        @param x (int): horizontal coordinate of piece should be moved
 
         """
 
@@ -105,13 +97,12 @@ class Piece():
         
 
     def check_moves_king_safety(self, moves, board):
-        """
+        """!
         Description:
            returns all moves after which king is safe
 
-        Parameters:
-            moves (list): consisting of coordinates of piece possible moves
-            board (list): stores all pieces in appropiate fields
+        @param moves (list): consisting of coordinates of piece possible moves
+        @param board (list): stores all pieces in appropiate fields
 
         """
         return [move for move in moves if (move.type == "castle" or self.king_safe(move.y, move.x, board))]
@@ -119,18 +110,15 @@ class Piece():
 
 
     def king_safe(self, m_y, m_x, board):
-        """
-        Description:
-            checks if after given move the king cannot be taken 
+        """!
+        @brief checks if after given move the king cannot be taken 
 
-        Parameters:
-            m_y (int): vertical coordinate after move is done
-            m_x (int): horizontal coordinate after move is done
-            board (list): stores all pieces in appropiate fields
+        @param m_y (int): vertical coordinate after move is done
+        @param m_x (int): horizontal coordinate after move is done
+        @param board (list): stores all pieces in appropiate fields
 
-        Returns:
-            True if after given move the king cannot be taken
-            False if after given move the king can be taken
+        @return True if after given move the king cannot be taken
+        @return False if after given move the king can be taken
 
         """
 
@@ -177,13 +165,12 @@ class Piece():
 
 
 class Pawn(Piece):
-    """
-        Description:
-            stores properities of Pawn, inherits form Piece class
+    """!
+        @brief stores properties of Pawn, inherits form Piece class
 
-        Args:
-            white_img_url (str): path to white Pawn png
-            black_img_url (str): path to black Pawn png
+        
+        @param white_img_url (str): path to white Pawn png
+        @param black_img_url (str): path to black Pawn png
 
     """
 
@@ -200,14 +187,11 @@ class Pawn(Piece):
                 
 
     def move_piece(self, y, x, board = None):
-        """
-        Description:
-            moves piece img using move() method, changes actual coordinates
-            and checks if current move is leading to promotion
+        """!
+        @brief moves piece img using move() method, changes actual coordinates and checks if current move is leading to promotion
 
-        Parameters:
-            y (int): vertical coordinate of where piece should be moved
-            x (int): horizontal coordinate of piece should be moved
+        @param: y (int): vertical coordinate of where piece should be moved
+        @param: x (int): horizontal coordinate of piece should be moved
 
         """
 
@@ -222,20 +206,18 @@ class Pawn(Piece):
 
 
     def all_moves(self, board, prev_board = None, check_king_safety = True):
-        """
-        Description:
-            Creates list of all possible moves that Pawn object can make
+        """!
+        @brief Creates list of all possible moves that Pawn object can make
 
-        Parameters:
-            board (list): stores all pieces in appropiate fields
-            prev_board (list): previous state of board (list)
-            check_king_safety (bool): information about king safety
+        @param: board (list): stores all pieces in appropiate fields
+        @param: prev_board (list): previous state of board (list)
+        @param: check_king_safety (bool): information about king safety
 
-        Returns 
-            moves (list): stores coordinates of all possible fields where object can move
+        @return moves (list): stores coordinates of all possible fields where object can move
         
             
         """
+
         moves = []
         moves += self.move_forward(board) + self.take_diagonal(board)
 
@@ -249,15 +231,12 @@ class Pawn(Piece):
         
 
     def move_forward(self, board):
-        """
-        Description:
-            Returns list of all possible moves that Pawn object can make in vertical direction
+        """!
+        @brief Returns list of all possible moves that Pawn object can make in vertical direction
 
-        Parameters:
-            board (list): stores all pieces in appropiate fields
+        @param: board (list): stores all pieces in appropiate fields
 
-        Returns 
-            (list): all possible moves that Pawn object can make in vertical direction
+        @return (list): all possible moves that Pawn object can make in vertical direction
         
             
         """
@@ -289,18 +268,16 @@ class Pawn(Piece):
 
 
     def take_diagonal(self, board):
-        """
-        Description:
-            Returns list of all possible take moves of Pawn 
+        """!
+        @brief Returns list of all possible take moves of Pawn 
 
-        Parameters:
-            board (list): stores all pieces in appropiate fields
+        @param: board (list): stores all pieces in appropiate fields
 
-        Returns 
-            moves (list): all possible moves that Pawn object can make in diagonal direction
+        @return moves (list): all possible moves that Pawn object can make in diagonal direction
         
             
         """
+
         if self.color == 'white':
             moves = []
 
@@ -335,14 +312,12 @@ class Pawn(Piece):
         return moves
     
     def en_passant(self, board, prev_board):
-        """
+        """!
 
-        Parameters:
-            board (list): stores all pieces in appropiate fields
-            prev_board (list): previous state of board (list)
+        @param: board (list): stores all pieces in appropiate fields
+        @param: prev_board (list): previous state of board (list)
 
-        Returns 
-            moves (list): field where Pawn object can be after en passant move
+        @return moves (list): field where Pawn object can be after en passant move
         
             
         """
@@ -383,12 +358,10 @@ class Pawn(Piece):
 
 
     def promotion(self, board):
-        """
-        Parameters:
-            board (list): stores all pieces in appropiate fields
+        """!
+        @param: board (list): stores all pieces in appropiate fields
 
-        Returns 
-            moves (list): field where Pawn object can be after promotion move
+        @return moves (list): field where Pawn object can be after promotion move
         
             
         """
@@ -428,12 +401,10 @@ class Pawn(Piece):
 
         
         def chosen_piece():
-            """
-            Description:
-                Waits for input (which piece user chose)
+            """!
+            @brief Waits for input (which piece user chose)
 
-            Returns:
-                (class): chosen piece type 
+            @return (class): chosen piece type 
             """
             
             while True: #wait for input
@@ -467,19 +438,12 @@ class Pawn(Piece):
 
 
 
-
-
-
-
-
 class Knight(Piece):
-    """
-        Description:
-            stores properities of Knight, inherits form Piece class
+    """!
+        @brief stores properties of Knight, inherits form Piece class
 
-        Args:
-            white_img_url (str): path to white Knight png
-            black_img_url (str): path to black Knight png
+        @param white_img_url (str): path to white Knight png
+        @param black_img_url (str): path to black Knight png
 
     """
 
@@ -497,20 +461,17 @@ class Knight(Piece):
     
 
     def all_moves(self, board, check_king_safety = True):
-        """
-        Description:
-            Creates list of all possible moves that Knight object can make 
-            and changes list if king is not safe
+        """!
+        @brief Creates list of all possible moves that Knight object can make and changes list if king is not safe
 
-        Parameters:
-            board (list): stores all pieces in appropiate fields
-            check_king_safety (bool): information about king safety
+        @param: board (list): stores all pieces in appropiate fields
+        @param: check_king_safety (bool): information about king safety
 
-        Returns 
-            moves (list): stores coordinates of all possible fields where object can move
+        @return moves (list): stores coordinates of all possible fields where object can move
         
             
         """
+    
         moves = []
         moves+=self.knight_moves(board)
 
@@ -521,18 +482,16 @@ class Knight(Piece):
 
 
     def knight_moves(self,board):
-        """
-        Description:
-            Creates list of all possible moves that Knight object can make 
+        """!
+        @brief Creates list of all possible moves that Knight object can make 
 
-        Parameters:
-            board (list): stores all pieces in appropiate fields
+        @param: board (list): stores all pieces in appropiate fields
 
-        Returns 
-            moves (list): stores coordinates of all possible fields where object can move
+        @return moves (list): stores coordinates of all possible fields where object can move
         
             
         """
+
         moves=[]
 
         for y in range(-2,3):
@@ -563,13 +522,11 @@ class Knight(Piece):
 
 
 class Rook(Piece):
-    """
-        Description:
-            stores properities of Rook, inherits form Piece class
+    """!
+        @brief stores properties of Rook, inherits from Piece class
 
-        Args:
-            white_img_url (str): path to white Rook png
-            black_img_url (str): path to black Rook png
+        @param white_img_url (str): path to white Rook png
+        @param black_img_url (str): path to black Rook png
 
     """
 
@@ -590,17 +547,12 @@ class Rook(Piece):
       
 
     def all_moves(self, board, check_king_safety = True):
-        """
-        Description:
-            Creates list of all possible moves that Rook object can make 
-            and changes list if king is not safe
+        """!
+        @brief Creates list of all possible moves that Rook object can make and changes list if king is not safe
 
-        Parameters:
-            board (list): stores all pieces in appropiate fields
-            check_king_safety (bool): information about king safety
+        @param check_king_safety (bool): information about king safety
 
-        Returns 
-            moves (list): stores coordinates of all possible fields where object can move
+        @return moves (list): stores coordinates of all possible fields where object can move
         
             
         """
@@ -614,16 +566,13 @@ class Rook(Piece):
         return moves
 
     def rook_moves(self,board):
-        """
-        Description:
-            Creates list of all possible moves that Rook object can make 
+        """!
+        @brief Creates list of all possible moves that Rook object can make 
 
-        Parameters:
-            board (list): stores all pieces in appropiate fields
-            check_king_safety (bool): information about king safety
+        @param: board (list): stores all pieces in appropiate fields
+        @param: check_king_safety (bool): information about king safety
 
-        Returns 
-            moves (list): stores coordinates of all possible fields where object can move
+        @return moves (list): stores coordinates of all possible fields where object can move
         
             
         """
@@ -671,13 +620,11 @@ class Rook(Piece):
 
 
 class Bishop(Piece):
-    """
-        Description:
-            stores properities of Bishop, inherits form Piece class
+    """!
+        @brief stores properties of Bishop, inherits form Piece class
 
-        Args:
-            white_img_url (str): path to white Bishop png
-            black_img_url (str): path to black Bishop png
+        @param white_img_url (str): path to white Bishop png
+        @param black_img_url (str): path to black Bishop png
 
     """
 
@@ -697,20 +644,17 @@ class Bishop(Piece):
       
 
     def all_moves(self, board, check_king_safety = True):
-        """
-        Description:
-            Creates list of all possible moves that Bishop object can make 
-            and changes list if king is not safe
+        """!
+        @brief Creates list of all possible moves that Bishop object can make and changes list if king is not safe
 
-        Parameters:
-            board (list): stores all pieces in appropiate fields
-            check_king_safety (bool): information about king safety
+        @param: board (list): stores all pieces in appropiate fields
+        @param: check_king_safety (bool): information about king safety
 
-        Returns 
-            moves (list): stores coordinates of all possible fields where object can move
+        @return moves (list): stores coordinates of all possible fields where object can move
         
             
         """
+
         moves = []
         moves+=self.bishop_moves(board)
 
@@ -722,16 +666,13 @@ class Bishop(Piece):
        
 
     def bishop_moves(self,board):
-        """
-        Description:
-            Creates list of all possible moves that Bishop object can make 
+        """!
+        @brief Creates list of all possible moves that Bishop object can make 
 
-        Parameters:
-            board (list): stores all pieces in appropiate fields
-            check_king_safety (bool): information about king safety
+        @param: board (list): stores all pieces in appropiate fields
+        @param: check_king_safety (bool): information about king safety
 
-        Returns 
-            moves (list): stores coordinates of all possible fields where object can move
+        @return moves (list): stores coordinates of all possible fields where object can move
         
             
         """
@@ -783,13 +724,11 @@ class Bishop(Piece):
 
 
 class Queen(Bishop, Rook):
-    """
-        Description:
-            stores properities of Queen, inherits form Bishop and Rook class
+    """!
+        @brief stores properties of Queen, inherits form Bishop and Rook class
 
-        Args:
-            white_img_url (str): path to white Queen png
-            black_img_url (str): path to black Queen png
+        @param white_img_url (str): path to white Queen png
+        @param black_img_url (str): path to black Queen png
 
     """
 
@@ -807,18 +746,13 @@ class Queen(Bishop, Rook):
 
 
     def all_moves(self, board, check_king_safety = True):
-        """
-        Description:
-            Creates list of all possible moves that Queen object can make 
-            and changes list if king is not safe
+        """!
+        @brief Creates list of all possible moves that Queen object can make and changes list if king is not safe
 
-        Parameters:
-            board (list): stores all pieces in appropiate fields
-            check_king_safety (bool): information about king safety
+        @param: board (list): stores all pieces in appropiate fields
+        @param: check_king_safety (bool): information about king safety
 
-        Returns 
-            moves (list): stores coordinates of all possible fields where object can move
-            all Bishop moves + all Rook moves
+        @return moves (list): stores coordinates of all possible fields where object can move all Bishop moves + all Rook moves
         
             
         """
@@ -839,15 +773,14 @@ class Queen(Bishop, Rook):
 
 
 class King(Piece):
-    """
-        Description:
-            stores properities of King, inherits form Piece class
+    """!
+        @brief stores properties of King, inherits form Piece class
 
-        Args:
-            white_img_url (str): path to white King png
-            black_img_url (str): path to black King png
+        @param white_img_url (str): path to white King png
+        @param black_img_url (str): path to black King png
 
     """
+
     white_img_url = 'pieces/w_king_png_shadow_128px.png'
     black_img_url = 'pieces/b_king_png_shadow_128px.png'
     
@@ -863,17 +796,14 @@ class King(Piece):
 
 
     def all_moves(self, board, check_king_safety = True):
-        """
-        Description:
-            Creates list of all possible moves that King object can make 
+        """!
+        @brief Creates list of all possible moves that King object can make 
             and changes list if king is not safe
 
-        Parameters:
-            board (list): stores all pieces in appropiate fields
-            check_king_safety (bool): information about king safety
+        @param: board (list): stores all pieces in appropiate fields
+        @param: check_king_safety (bool): information about king safety
 
-        Returns 
-            moves (list): stores coordinates of all possible fields where object can move
+        @return moves (list): stores coordinates of all possible fields where object can move
         
             
         """
@@ -887,16 +817,13 @@ class King(Piece):
 
 
     def king_moves(self,board):
-        """
-        Description:
-            Creates list of all possible moves that King object can make 
+        """!
+        @brief Creates list of all possible moves that King object can make 
 
-        Parameters:
-            board (list): stores all pieces in appropiate fields
-            check_king_safety (bool): information about king safety
+        @param: board (list): stores all pieces in appropiate fields
+        @param: check_king_safety (bool): information about king safety
 
-        Returns 
-            moves (list): stores coordinates of all possible fields where object can move
+        @return moves (list): stores coordinates of all possible fields where object can move
         
             
         """
@@ -921,14 +848,12 @@ class King(Piece):
 
 
     def castle_long(self, board):
-        """
+        """!
 
-        Parameters:
-            board (list): stores all pieces in appropiate fields
-            check_king_safety (bool): information about king safety
+        @param: board (list): stores all pieces in appropiate fields
+        @param: check_king_safety (bool): information about king safety
 
-        Returns 
-            moves (list): stores coordinates of all possible fields where object can move after castle_long move
+        @return moves (list): stores coordinates of all possible fields where object can move after castle_long move
         
             
         """
@@ -953,16 +878,14 @@ class King(Piece):
             return []
 
     def castle_short(self, board):
-        """
+        """!
         
-        Parameters:
-            board (list): stores all pieces in appropiate fields
-            check_king_safety (bool): information about king safety
+        @param: board (list): stores all pieces in appropiate fields
+        @param: check_king_safety (bool): information about king safety
 
-        Returns 
-            moves (list): stores coordinates of all possible fields where object can move after castle_short move
+        @return moves (list): stores coordinates of all possible fields where object can move after castle_short move
         
-            
+    
         """
         if (
                 self.is_moved_on_move == None and

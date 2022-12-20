@@ -6,35 +6,36 @@ from buttons import *
 
 
 class Game(object):
-    """
-        Args:
-            dark_sqaures_color (str): color specifier string for dark sqaures color 
-            light_sqaures_color (str): color specifier string for light sqaures color 
-            buttons_color (str): color specifier string for buttons color 
+    """!
+        @brief Main class handling gameplay, user interactions and graphic events.
 
-            move_sound (str): stores path to move sound
-            choise_sound (str): stores path to choise sound
-            take_sound (str): stores path to take sound
-            error_sound (str): stores path to error sound
-            restore_sound (str): stores path to restore sound
+        @param dark_sqaures_color (str): color specifier string for dark sqaures color 
+        @param light_sqaures_color (str): color specifier string for light sqaures color 
+        @param buttons_color (str): color specifier string for buttons color 
 
-            win (graphics.GraphWin): window in which game is displayed
-            mega_board (list): all previous board states
-            board (list): current board state
-            chosen_piece (Piece): piece that set_starting_position clicked on
-            chosen_piece_highlight (graphics.Rectangle): sqaure that marks chosen piece
-            eg_window (graphics.GraphWin): window which pop up when the game ends 
-            turn (str): color of player which turn it currently is
-            pieces (dict): stores all pieces according to color
+        @param move_sound (str): stores path to move sound
+        @param choise_sound (str): stores path to choise sound
+        @param take_sound (str): stores path to take sound
+        @param error_sound (str): stores path to error sound
+        @param restore_sound (str): stores path to restore sound
 
-            prevButton (Button): button used to rewind moves
-            nextButton (Button): button used to forward moves
-            RestorePosition (Button): button used to Restore position
-            NewGameButton (Button): button used to iniciate new game
-            
-            c_board_nr (int): index of currently diplayed board
-            lp_reps (list): list of numbers indicating on which move last possible repetition could have occured
-            moves_no_take (int): number of moves in row whithout taking 
+        @param win (graphics.GraphWin): window in which game is displayed
+        @param mega_board (list): all previous board states
+        @param board (list): current board state
+        @param chosen_piece (Piece): piece that set_starting_position clicked on
+        @param chosen_piece_highlight (graphics.Rectangle): sqaure that marks chosen piece
+        @param eg_window (graphics.GraphWin): window which pop up when the game ends 
+        @param turn (str): color of player which turn it currently is
+        @param pieces (dict): stores all pieces according to color
+
+        @param prevButton (Button): button used to rewind moves
+        @param nextButton (Button): button used to forward moves
+        @param RestorePosition (Button): button used to Restore position
+        @param NewGameButton (Button): button used to iniciate new game
+        
+        @param c_board_nr (int): index of currently diplayed board
+        @param lp_reps (list): list of numbers indicating on which move last possible repetition could have occured
+        @param moves_no_take (int): number of moves in row whithout taking 
     """
     
     dark_sqaures_color = color_rgb(152, 6, 171)
@@ -120,13 +121,12 @@ class Game(object):
 
     @chosen_piece.setter
     def chosen_piece(self, chosen_piece):
-        """
-            Description:
-                Set chosen_piece
-                Assigns and unassings highlight to chosen piece
+        """!
+            @brief
+                Set chosen_piece.
+                Assigns and unassings highlight to chosen piece.
 
-            Parameters:
-                chosen_piece (Piece): piece clicked on by player
+            @param chosen_piece (Piece): piece clicked on by player
         """
 
         self._chosen_piece = chosen_piece
@@ -143,25 +143,22 @@ class Game(object):
             self.chosen_piece_highlight.draw(self.win)
 
     def play_sound(self, sound):
-        """
-            Description:
-                Creates new thread  
-                Plays sounds in the new thread
+        """!
+            @brief
+                Creates new thread.
+                Plays sounds in the new thread.
 
-            Parameters:
-                sound (str): path to chosen sounds
+            @param sound (str): path to chosen sounds
         """
         
         soundThread = Thread(target = self.play_sound_thread, args=[sound])
         soundThread.start()
 
     def play_sound_thread(self, sound):
-        """
-            Description:
-                Target function for thread
+        """!
+            @brief Target function for thread.
 
-            Parameters:
-                sound (str): path to chosen sounds
+            @param sound (str): path to chosen sounds
         """
 
         ws.PlaySound(sound, ws.SND_ASYNC)
@@ -169,12 +166,10 @@ class Game(object):
 
 
     def draw_chosen_board(self, board_nr):
-        """
-            Description:
-                Draws chosen board
+        """!
+            @brief Draws chosen board.
 
-            Parameters:
-                board_nr (int): number of the board to be drawn
+            @param board_nr (int): number of the board to be drawn
         """
 
         if board_nr in range(0, len(self.mega_board)):
@@ -208,9 +203,8 @@ class Game(object):
         
 
     def refresh_buttons(self):
-        """
-            Description:
-                checks if prev and next buttons are available to click
+        """!
+            @brief checks if prev and next buttons are available to click.
         """
 
 
@@ -232,9 +226,8 @@ class Game(object):
 
 
     def set_piece(self, y, x, piece, color, win):
-        """
-            Description:
-                assigns given piece to given place
+        """!
+            @brief assigns given piece to given place.
         """
         
         self.board[y][x] = piece(color, y, x, win)
@@ -248,9 +241,8 @@ class Game(object):
 
 
     def set_starting_position(self):
-        """
-            Description:
-                assings all piece to their starting places
+        """!
+            @brief assings all piece to their starting places.
         """
 
         for x in range(8):
@@ -291,10 +283,10 @@ class Game(object):
 
     def draw_board(self):
         
-        """
-            Description:
-                Draws board (backround)
-                Draws fields legend
+        """!
+            @brief
+                Draws board (backround).
+                Draws fields legend.
         """
         for y in range(8):
             for x in range(8):
@@ -339,18 +331,18 @@ class Game(object):
                 
 
     def draw_pieces(self):
-        """
-            Description:
-                Draws all piece that are set on the board
+        """!
+            @brief
+                Draws all piece that are set on the board.
         """
         for p in self.pieces['white'] + self.pieces['black']:
             p.draw_piece()
 
     def draw_menu(self):
-        """
-            Description:
-                Draws sepparating line
-                Draws all buttons in menu
+        """!
+            @brief
+                Draws sepparating line.
+                Draws all buttons in menu.
         """
 
         sepLine = Line(Point(803, 0), Point(803,800))
@@ -364,9 +356,8 @@ class Game(object):
         
 
     def find_all_moves(self):
-        """
-            Description:
-                Finds every move of all pieces on the board assings them to accordingpieces
+        """!
+            @brief Finds every move of all pieces on the board assings them to accordingpieces.
         """
         
         mate = True
@@ -403,18 +394,16 @@ class Game(object):
                 
         
     def draw_chosen_piece_moves(self):
-        """
-            Description:
-                Draws moves of chosen piece on the board
+        """!
+            @brief Draws moves of chosen piece on the board.
         """
         for move in self.chosen_piece.moves:
             move.draw_move()
         
 
     def undraw_chosen_piece_moves(self):
-        """
-            Description:
-                Undraws moves of chosen piece from the board
+        """!
+            @brief Undraws moves of chosen piece from the board.
         """
         for move in self.chosen_piece.moves:
             move.undraw_move()
@@ -424,17 +413,16 @@ class Game(object):
 
     def make_move(self, x, y):
         
-        """
-            Description:
+        """!
+            @brief
                 Checks if square that player clicked on is square on which chosen piece can move,
-                if so it execute that move
+                if so it execute that move.
 
-            Parameters:
-                x (int): horizontal coordinate of clicked square
-                y (int): vertical coordinate of clicked square
+            @param x (int): horizontal coordinate of clicked square
+            @param y (int): vertical coordinate of clicked square
 
-            Returns:
-                Bool: True if square that player clicked on is square on which chosen piece can move, False if not
+            @return True if square that player clicked on is square on which chosen piece can move
+            @reutrn False if not
 
         """
         
@@ -481,9 +469,8 @@ class Game(object):
 
     def change_turn(self):
         
-        """
-            Description:
-                Changes turn to the opposite
+        """!
+            @brief Changes turn to the opposite
         """
 
         if self.turn == 'white':
@@ -493,18 +480,17 @@ class Game(object):
 
     def move_piece(self, y, x, piece_to_move):
         
-        """
-            Description:
-                Changes places of piece in the board
-                Initiate move_piece for the piece (changing coordinates)
-                Decects if promotion occurs and iniciate it
-                If moved piece is Rook or King assings on which move it was moved (declaining castle rights)
+        """!
+            @brief
+                Changes places of piece in the board.
+                Initiate move_piece for the piece (changing coordinates).
+                Decects if promotion occurs and iniciate it.
+                If moved piece is Rook or King assings on which move it was moved (declaining castle rights).
 
 
-            Parameters:
-                piece_to_move (piece): piece that designated to move
-                x (int): piece will move to this cooridante
-                y (int): piece will move to this cooridante
+            @param piece_to_move (piece): piece that designated to move
+            @param x (int): piece will move to this cooridante
+            @param y (int): piece will move to this cooridante
 
         """
         
@@ -534,16 +520,14 @@ class Game(object):
 
 
     def take_piece(self, y, x):
-        """
-            Description:
-                Removes taken piece
-                Resets moves without taking counter
+        """!
+            @brief
+                Removes taken piece.
+                Resets moves without taking counter.
 
-
-            Parameters:
-                piece_to_move (piece): piece that designated to move
-                x (int): horizontal cooridante of piece that will be removed
-                y (int): vertical cooridante of piece that will be removed
+            @param piece_to_move (piece): piece that designated to move
+            @param x (int): horizontal cooridante of piece that will be removed
+            @param y (int): vertical cooridante of piece that will be removed
 
 
         """
@@ -554,35 +538,31 @@ class Game(object):
         
 
     def castle_short(self, y, x):
-        """
-            Description:
-                Move piece of short castling
+        """!
+            @brief Move piece of short castling.
 
-            Parameters:
-                x (int): horizontal cooridante of the king
-                y (int): vertical cooridante of the king
+            @param x (int): horizontal cooridante of the king
+            @param y (int): vertical cooridante of the king
         """
         self.move_piece(y, x, self.chosen_piece) #move king
         self.move_piece(y, 5, self.board[y][7]) #move rook
 
     def castle_long(self, y, x):
-        """
-            Description:
-                Move piece of long castling
+        """!
+            @brief Move piece of long castling.
 
-            Parameters:
-                x (int): horizontal cooridante of the king
-                y (int): vertical cooridante of the king
+            @param x (int): horizontal cooridante of the king
+            @param y (int): vertical cooridante of the king
         """
         self.move_piece(y, x, self.chosen_piece) #move king
         self.move_piece(y, 3, self.board[y][0]) #move rook
         
 
     def wait_for_input(self):
-        """
-            Description:
-                Waits for mouse input
-                Acts accordingly to input
+        """!
+            @brief
+                Waits for mouse input.
+                Acts accordingly to input.
         """
        
         self.find_all_moves()
@@ -662,12 +642,10 @@ class Game(object):
             sleep(0.1)
 
     def restore(self, board_nr):
-        """
-            Description:
-                Restores board of given number
+        """!
+            @brief Restores board of given number.
 
-            Parameters:
-                board_nr (int): number of the board to be restored
+            @param board_nr (int): number of the board to be restored
         """
         
         if self.eg_window != None:
@@ -732,12 +710,10 @@ class Game(object):
         
         
     def px_to_index(self, value):
-        """
-            Parameters:
-                value (int, float): value in pixels
+        """!
+            @param value (int, float): value in pixels
 
-            Returns:
-                int: value of index containing given pixel value
+            @return int: value of index containing given pixel value
         """
 
         return int(value // 100)
@@ -748,9 +724,9 @@ class Game(object):
                 move.undraw_move()
 
     def insufficient_material(self):
-        """
-            Returns:
-                Bool: True if there is insufficient material on the board to win, False if not
+        """!
+            @return True if there is insufficient material on the board to win
+            @reutrn False if not
         """
         for color in ['white','black']:
 
@@ -771,9 +747,9 @@ class Game(object):
 
 
     def fifty_moves_rule(self):
-        """
-            Returns:
-                Bool: True if there was 50 moves without taking or moving pawn in row, False if not
+        """!
+            @return True if there was 50 moves without taking or moving pawn in row
+            @return False if not
         """
         if self.moves_no_take == 100:
             return True
@@ -782,13 +758,11 @@ class Game(object):
 
     def endgame_window(self, text, draw):
 
-        """
-            Description:
-                Pops up the endgame window
+        """!
+            @brief Pops up the endgame window
 
-            Parameters:
-                text (str): text that will be displayed in endgame window
-                draw (bool): True if game ended in a draw
+            @param text (str): text that will be displayed in endgame window
+            @param draw (bool): True if game ended in a draw
         """
         
         self.play_sound(Game.end_sound)
@@ -831,38 +805,16 @@ class Game(object):
 
 
     def threefold_repetition(self):
+        """!
+            @return True if there is the position was repeted 3 times
+            @return False if not
         """
-            Returns:
-                Bool: True if there is the position was repeted 3 times, False if not
-        """
-
-        def compare_boards(i):
-            """
-                Parameters:
-                    i (int): number of board that will be compared to current
-                Returns:
-                    Bool: True if the compared boards were the same, False if not
-                    Kill (str): if spotted a board state that cannot be repeated
-            """
-            
-            for y in range(8):
-                for x in range(8):
-                    if self.board[y][x] != self.mega_board[i][y][x]:
-                        if (
-                                (self.board[y][x] == None and isinstance(self.mega_board[i][y][x], Pawn)) or 
-                                (isinstance(self.board[y][x], Pawn) and self.mega_board[i][y][x] == None) or 
-                                (self.board[y][x] != None and self.mega_board[i][y][x] != None)
-                            ):  
-                            return "KILL"
-                        else:
-                            return False
-            return True
 
         i = len(self.mega_board) - 2
         r = 1
 
         while i >= self.lp_reps[-1]:
-            var = compare_boards(i)
+            var = self.compare_boards(i)
 
             if var == True:
                 r += 1
@@ -879,18 +831,39 @@ class Game(object):
 
         return False
 
+    def compare_boards(self, i):
+        """!
+            @param i (int): number of board that will be compared to current
+
+            @return True if the compared boards were the same
+            @return False if not
+            @return Kill (str): if spotted a board state that cannot be repeated
+        """
+        
+        for y in range(8):
+            for x in range(8):
+                if self.board[y][x] != self.mega_board[i][y][x]:
+                    if (
+                            (self.board[y][x] == None and isinstance(self.mega_board[i][y][x], Pawn)) or 
+                            (isinstance(self.board[y][x], Pawn) and self.mega_board[i][y][x] == None) or 
+                            (self.board[y][x] != None and self.mega_board[i][y][x] != None)
+                        ):  
+                        return "KILL"
+                    else:
+                        return False
+        return True
+
 
     def deepcopy(self, board):
-        """
-            Parameters:
-                board (list): board that will be deepcopied
-            Returns:
-                list: deepcopied board
+        """!
+            @param board (list): board that will be deepcopied
+
+            @return list: deepcopied board
         """
 
         return [[board[y][x] for x in range(8)] for y in range (8)]
 
-    def mege_print(self, board):
+    def mege_print(self, board): #do wyjebki później
         
         string = ""
         for y in range(8):
