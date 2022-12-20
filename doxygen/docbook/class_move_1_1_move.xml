@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_move_1_1_move" xml:lang="en-US">
+<title>Move.Move Class Reference</title>
+<indexterm><primary>Move.Move</primary></indexterm>
+<para>
+
+<para>Used to display avalible moves that will be represented as dots on a board. </para>
+ 
+</para>
+<para>Inheritance diagram for Move.Move:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_move_1_1_move.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_move_1_1_move_1ac6c1ed7ef0641074e61935cbca46fee5"/>def <emphasis role="strong">__init__</emphasis> (self, y, x, win, type=None, castle_way=None)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_move_1_1_move_1a9331b159ab19d7bce891b8d5ff026134"/>def <emphasis role="strong">type</emphasis> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_class_move_1_1_move_1adb44fce7ff61406c83eeaae52296b48d">type</link> (self, type)</para>
+
+<para>Set move image based on it type. </para>
+</listitem>
+            <listitem><para>def <link linkend="_class_move_1_1_move_1a35f400e8c0c76be17f2427bcca1be4c7">draw_move</link> (self)</para>
+
+<para>Draw the move based on cooridnates and type. </para>
+</listitem>
+            <listitem><para>def <link linkend="_class_move_1_1_move_1a3330b94903a7d25f2338f58bfd26efe5">undraw_move</link> (self)</para>
+
+<para>Undraw the move. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_move_1_1_move_1acdd8a75fa1fbd740ec214cdc41e35aa5"/>def <emphasis role="strong">__str__</emphasis> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_move_1_1_move_1a96b0345526711e50e7ef8f2a9512aa7d"/><emphasis role="strong">y</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_move_1_1_move_1ac210a933393846b3b67b7c4aeeae3a37"/><emphasis role="strong">x</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_move_1_1_move_1ab4004586e74c35ff8f524db7db36350b"/><emphasis role="strong">win</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_move_1_1_move_1a225fc97592717f3ecd45e0f0ab474e67"/><emphasis role="strong">type</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_move_1_1_move_1a9db697ca530e6b76ac785bb3e34792d7"/><emphasis role="strong">castle_way</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_move_1_1_move_1a34df4ac76ac1bfed37a7300b2551d884"/><emphasis role="strong">img</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_move_1_1_move_1a1967ca3a8a87b7e1b1769d55c52c2578"/>string <emphasis role="strong">standard_color</emphasis> = &apos;grey&apos;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_move_1_1_move_1aaed74f6c7bd506e2b479eb30e3d0913d"/><emphasis role="strong">takes_color</emphasis> = color_rgb(225, 78, 102)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Used to display avalible moves that will be represented as dots on a board. </para>
+
+
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x</entry><entry>
+<para>(int): x coordinate of the move </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y</entry><entry>
+<para>(int): y coordinate of the move </para>
+</entry>
+                            </row>
+                            <row>
+<entry>win</entry><entry>
+<para>(<link linkend="_classgraphics_1_1_graph_win">graphics.GraphWin</link>): windows in which the move will be drawn</para>
+</entry>
+                            </row>
+                            <row>
+<entry>type</entry><entry>
+<para>(str) Avalible types: None (standard move), &apos;takes&apos;, &apos;castle&apos;, &apos;en_passant&apos;</para>
+</entry>
+                            </row>
+                            <row>
+<entry>castle_way</entry><entry>
+<para>(str): &apos;long&apos; or &apos;short&apos; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_move_1_1_move_1a35f400e8c0c76be17f2427bcca1be4c7"/><section>
+    <title>draw_move()</title>
+<indexterm><primary>draw_move</primary><secondary>Move.Move</secondary></indexterm>
+<indexterm><primary>Move.Move</primary><secondary>draw_move</secondary></indexterm>
+<para><computeroutput>def Move.Move.draw_move ( self)</computeroutput></para><para>
+
+<para>Draw the move based on cooridnates and type. </para>
+</para>
+</section>
+<anchor xml:id="_class_move_1_1_move_1adb44fce7ff61406c83eeaae52296b48d"/><section>
+    <title>type()</title>
+<indexterm><primary>type</primary><secondary>Move.Move</secondary></indexterm>
+<indexterm><primary>Move.Move</primary><secondary>type</secondary></indexterm>
+<para><computeroutput>def Move.Move.type ( self,  type)</computeroutput></para><para>
+
+<para>Set move image based on it type. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>type</entry><entry>
+<para>(str): Type of the move </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_move_1_1_move_1a3330b94903a7d25f2338f58bfd26efe5"/><section>
+    <title>undraw_move()</title>
+<indexterm><primary>undraw_move</primary><secondary>Move.Move</secondary></indexterm>
+<indexterm><primary>Move.Move</primary><secondary>undraw_move</secondary></indexterm>
+<para><computeroutput>def Move.Move.undraw_move ( self)</computeroutput></para><para>
+
+<para>Undraw the move. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+Move.py</section>
+</section>

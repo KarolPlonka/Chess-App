@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgraphics_1_1_graphics_object" xml:lang="en-US">
+<title>graphics.GraphicsObject Class Reference</title>
+<indexterm><primary>graphics.GraphicsObject</primary></indexterm>
+<para>Inheritance diagram for graphics.GraphicsObject:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgraphics_1_1_graphics_object.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graphics_object_1a87c93d91bf82269f0b31c1e669b7ddf4"/>def <emphasis role="strong">__init__</emphasis> (self, options)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graphics_object_1acfba33cbf63f5333f961b86e988fc292">setFill</link> (self, color)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graphics_object_1a0acf1399e539cc273170096552a04139">setOutline</link> (self, color)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graphics_object_1a63006871dd6242bfc7aabe9ddcbb1263">setWidth</link> (self, width)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graphics_object_1ac7849154dccab74cb76d2a28035db48c">draw</link> (self, graphwin)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graphics_object_1a7dc6432aa782c84f61407362e579aaf5">undraw</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graphics_object_1a2dc26fc41e5fa51c7a97b592da2926e8">move</link> (self, dx, dy)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graphics_object_1a961312a5609642e6d96b892e9b5755e3"/><emphasis role="strong">canvas</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graphics_object_1a465597cb2472214302bfa13c7708e217"/><emphasis role="strong">id</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graphics_object_1a329ba44d4b0347a6f62eb4559110540a"/><emphasis role="strong">config</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Generic base class for all of the drawable objects</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgraphics_1_1_graphics_object_1ac7849154dccab74cb76d2a28035db48c"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>graphics.GraphicsObject</secondary></indexterm>
+<indexterm><primary>graphics.GraphicsObject</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>def graphics.GraphicsObject.draw ( self,  graphwin)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the object in graphwin, which should be a GraphWin
+object.  A GraphicsObject may only be drawn into one
+window. Raises an error if attempt made to draw an object that
+is already visible.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graphics_object_1a2dc26fc41e5fa51c7a97b592da2926e8"/><section>
+    <title>move()</title>
+<indexterm><primary>move</primary><secondary>graphics.GraphicsObject</secondary></indexterm>
+<indexterm><primary>graphics.GraphicsObject</primary><secondary>move</secondary></indexterm>
+<para><computeroutput>def graphics.GraphicsObject.move ( self,  dx,  dy)</computeroutput></para>
+<para><literallayout><computeroutput>move object dx units in x direction and dy units in y
+direction</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graphics_object_1acfba33cbf63f5333f961b86e988fc292"/><section>
+    <title>setFill()</title>
+<indexterm><primary>setFill</primary><secondary>graphics.GraphicsObject</secondary></indexterm>
+<indexterm><primary>graphics.GraphicsObject</primary><secondary>setFill</secondary></indexterm>
+<para><computeroutput>def graphics.GraphicsObject.setFill ( self,  color)</computeroutput></para>
+<para><literallayout><computeroutput>Set interior color to color</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classgraphics_1_1_entry_1ad1d04de2ffd36b0b6d6733fe992303ee">graphics.Entry</link>.</para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graphics_object_1a0acf1399e539cc273170096552a04139"/><section>
+    <title>setOutline()</title>
+<indexterm><primary>setOutline</primary><secondary>graphics.GraphicsObject</secondary></indexterm>
+<indexterm><primary>graphics.GraphicsObject</primary><secondary>setOutline</secondary></indexterm>
+<para><computeroutput>def graphics.GraphicsObject.setOutline ( self,  color)</computeroutput></para>
+<para><literallayout><computeroutput>Set outline color to color</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graphics_object_1a63006871dd6242bfc7aabe9ddcbb1263"/><section>
+    <title>setWidth()</title>
+<indexterm><primary>setWidth</primary><secondary>graphics.GraphicsObject</secondary></indexterm>
+<indexterm><primary>graphics.GraphicsObject</primary><secondary>setWidth</secondary></indexterm>
+<para><computeroutput>def graphics.GraphicsObject.setWidth ( self,  width)</computeroutput></para>
+<para><literallayout><computeroutput>Set line weight to width</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graphics_object_1a7dc6432aa782c84f61407362e579aaf5"/><section>
+    <title>undraw()</title>
+<indexterm><primary>undraw</primary><secondary>graphics.GraphicsObject</secondary></indexterm>
+<indexterm><primary>graphics.GraphicsObject</primary><secondary>undraw</secondary></indexterm>
+<para><computeroutput>def graphics.GraphicsObject.undraw ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Undraw the object (i.e. hide it). Returns silently if the
+object is not currently drawn.</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classgraphics_1_1_image_1a012595b97cd10d26b7fa2f0f0460d169">graphics.Image</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+graphics.py</section>
+</section>

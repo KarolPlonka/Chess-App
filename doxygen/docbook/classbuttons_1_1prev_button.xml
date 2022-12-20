@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbuttons_1_1prev_button" xml:lang="en-US">
+<title>buttons.prevButton Class Reference</title>
+<indexterm><primary>buttons.prevButton</primary></indexterm>
+<para>
+
+<para><link linkend="_classbuttons_1_1_button">Button</link> used the forward the position by one move. </para>
+ 
+</para>
+<para>Inheritance diagram for buttons.prevButton:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbuttons_1_1prev_button.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classbuttons_1_1prev_button_1a05312eef1b7b1b606cdf0d96398238a8">__init__</link> (self, win, c1, c2, size, m, start_x, start_y)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classbuttons_1_1prev_button_1a19aa094445a649908f0d6bc9ed4f87cd"/><emphasis role="strong">prev_p1</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1prev_button_1aad072ca88db9e1e6c7ad406c49c56a0d"/><emphasis role="strong">prev_p2</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1prev_button_1a53305a362d068b9ca2c1839fc15e63d6"/><emphasis role="strong">end_x</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1prev_button_1aacdb5880474cfc4ea208e3fdf0c49548"/><emphasis role="strong">end_y</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1prev_button_1aafce0e25162c1a2ce695004d64a952fb"/><emphasis role="strong">button</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1prev_button_1a3d50c6740c868c8b2b07e2088356c756"/><emphasis role="strong">button_t</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_classbuttons_1_1_button">Button</link> used the forward the position by one move. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classbuttons_1_1prev_button_1a05312eef1b7b1b606cdf0d96398238a8"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>buttons.prevButton</secondary></indexterm>
+<indexterm><primary>buttons.prevButton</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def buttons.prevButton.__init__ ( self,  win,  c1,  c2,  size,  m,  start_x,  start_y)</computeroutput></para><para>
+Reimplemented from <link linkend="_classbuttons_1_1_button">buttons.Button</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+buttons.py</section>
+</section>

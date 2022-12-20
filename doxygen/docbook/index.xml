@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>Chess App</title>
+    </info>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="classgraphics_1_1___b_box.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classpieces_1_1_bishop.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbuttons_1_1_button.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgraphics_1_1_circle.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgraphics_1_1_entry.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgame_1_1_game.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgraphics_1_1_graphics_error.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgraphics_1_1_graphics_object.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgraphics_1_1_graph_win.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgraphics_1_1_image.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classpieces_1_1_king.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classpieces_1_1_knight.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgraphics_1_1_line.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_move_1_1_move.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbuttons_1_1next_button.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgraphics_1_1_oval.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classpieces_1_1_pawn.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classpieces_1_1_piece.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgraphics_1_1_point.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgraphics_1_1_polygon.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbuttons_1_1prev_button.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classpieces_1_1_queen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgraphics_1_1_rectangle.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbuttons_1_1_restore_position.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classpieces_1_1_rook.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgraphics_1_1_text.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgraphics_1_1_transform.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

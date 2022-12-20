@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgraphics_1_1_rectangle" xml:lang="en-US">
+<title>graphics.Rectangle Class Reference</title>
+<indexterm><primary>graphics.Rectangle</primary></indexterm>
+<para>Inheritance diagram for graphics.Rectangle:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgraphics_1_1_rectangle.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classgraphics_1_1_rectangle_1a691f947134b1fc54443c55aa9d6214c5">__init__</link> (self, p1, p2)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_rectangle_1af16c7826cc639912ec3ef819f6ac467e"/>def <emphasis role="strong">__repr__</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_rectangle_1aaffe12a1bc2f5fc5ff221c909d2fb583"/>def <emphasis role="strong">clone</emphasis> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgraphics_1_1_rectangle_1a691f947134b1fc54443c55aa9d6214c5"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>graphics.Rectangle</secondary></indexterm>
+<indexterm><primary>graphics.Rectangle</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def graphics.Rectangle.__init__ ( self,  p1,  p2)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgraphics_1_1___b_box">graphics._BBox</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+graphics.py</section>
+</section>

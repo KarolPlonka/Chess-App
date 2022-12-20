@@ -1,0 +1,513 @@
+.TH "game.Game" 3 "Mon Dec 19 2022" "Chess App" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+game.Game \- Main class handling gameplay, user interactions and graphic events\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self)"
+.br
+.ti -1c
+.RI "def \fBchosen_piece\fP (self)"
+.br
+.ti -1c
+.RI "def \fBchosen_piece\fP (self, chosen_piece)"
+.br
+.RI "Set chosen_piece\&. "
+.ti -1c
+.RI "def \fBplay_sound\fP (self, sound)"
+.br
+.RI "Creates new thread\&. "
+.ti -1c
+.RI "def \fBplay_sound_thread\fP (self, sound)"
+.br
+.RI "Target function for thread\&. "
+.ti -1c
+.RI "def \fBdraw_chosen_board\fP (self, board_nr)"
+.br
+.RI "Draws chosen board\&. "
+.ti -1c
+.RI "def \fBrefresh_buttons\fP (self)"
+.br
+.RI "checks if prev and next buttons are available to click\&. "
+.ti -1c
+.RI "def \fBset_piece\fP (self, y, x, piece, color, win)"
+.br
+.RI "assigns given piece to given place\&. "
+.ti -1c
+.RI "def \fBset_starting_position\fP (self)"
+.br
+.RI "assings all piece to their starting places\&. "
+.ti -1c
+.RI "def \fBdraw_board\fP (self)"
+.br
+.RI "Draws board (backround)\&. "
+.ti -1c
+.RI "def \fBdraw_pieces\fP (self)"
+.br
+.RI "Draws all piece that are set on the board\&. "
+.ti -1c
+.RI "def \fBdraw_menu\fP (self)"
+.br
+.RI "Draws sepparating line\&. "
+.ti -1c
+.RI "def \fBfind_all_moves\fP (self)"
+.br
+.RI "Finds every move of all pieces on the board assings them to accordingpieces\&. "
+.ti -1c
+.RI "def \fBdraw_chosen_piece_moves\fP (self)"
+.br
+.RI "Draws moves of chosen piece on the board\&. "
+.ti -1c
+.RI "def \fBundraw_chosen_piece_moves\fP (self)"
+.br
+.RI "Undraws moves of chosen piece from the board\&. "
+.ti -1c
+.RI "def \fBmake_move\fP (self, x, y)"
+.br
+.RI "Checks if square that player clicked on is square on which chosen piece can move, if so it execute that move\&. "
+.ti -1c
+.RI "def \fBchange_turn\fP (self)"
+.br
+.RI "Changes turn to the opposite\&. "
+.ti -1c
+.RI "def \fBmove_piece\fP (self, y, x, piece_to_move)"
+.br
+.RI "Changes places of piece in the board\&. "
+.ti -1c
+.RI "def \fBtake_piece\fP (self, y, x)"
+.br
+.RI "Removes taken piece\&. "
+.ti -1c
+.RI "def \fBcastle_short\fP (self, y, x)"
+.br
+.RI "Move piece of short castling\&. "
+.ti -1c
+.RI "def \fBcastle_long\fP (self, y, x)"
+.br
+.RI "Move piece of long castling\&. "
+.ti -1c
+.RI "def \fBwait_for_input\fP (self)"
+.br
+.RI "Waits for mouse input\&. "
+.ti -1c
+.RI "def \fBrestore\fP (self, board_nr)"
+.br
+.RI "Restores board of given number\&. "
+.ti -1c
+.RI "def \fBpx_to_index\fP (self, value)"
+.br
+.ti -1c
+.RI "def \fBundraw_moves\fP (self)"
+.br
+.ti -1c
+.RI "def \fBinsufficient_material\fP (self)"
+.br
+.ti -1c
+.RI "def \fBfifty_moves_rule\fP (self)"
+.br
+.ti -1c
+.RI "def \fBendgame_window\fP (self, text, draw)"
+.br
+.RI "Pops up the endgame window\&. "
+.ti -1c
+.RI "def \fBthreefold_repetition\fP (self)"
+.br
+.ti -1c
+.RI "def \fBcompare_boards\fP (self, i)"
+.br
+.ti -1c
+.RI "def \fBdeepcopy\fP (self, board)"
+.br
+.ti -1c
+.RI "def \fBmege_print\fP (self, board)"
+.br
+.ti -1c
+.RI "def \fB__str__\fP (self)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBmega_board\fP"
+.br
+.ti -1c
+.RI "\fBboard\fP"
+.br
+.ti -1c
+.RI "\fBchosen_piece_highlight\fP"
+.br
+.ti -1c
+.RI "\fBwin\fP"
+.br
+.ti -1c
+.RI "\fBeg_window\fP"
+.br
+.ti -1c
+.RI "\fBturn\fP"
+.br
+.ti -1c
+.RI "\fBpieces\fP"
+.br
+.ti -1c
+.RI "\fBprevButton\fP"
+.br
+.ti -1c
+.RI "\fBnextButton\fP"
+.br
+.ti -1c
+.RI "\fBRestorePosition\fP"
+.br
+.ti -1c
+.RI "\fBNewGameButton\fP"
+.br
+.ti -1c
+.RI "\fBc_board_nr\fP"
+.br
+.ti -1c
+.RI "\fBlp_reps\fP"
+.br
+.ti -1c
+.RI "\fBmoves_no_take\fP"
+.br
+.ti -1c
+.RI "\fBchosen_piece\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBdark_sqaures_color\fP = color_rgb(152, 6, 171)"
+.br
+.ti -1c
+.RI "\fBlight_sqaures_color\fP = color_rgb(216, 162, 223)"
+.br
+.ti -1c
+.RI "\fBbuttons_color\fP = color_rgb(240, 152, 251)"
+.br
+.ti -1c
+.RI "string \fBmove_sound\fP = 'sounds/move\&.wav'"
+.br
+.ti -1c
+.RI "string \fBchoise_sound\fP = 'sounds/choise\&.wav'"
+.br
+.ti -1c
+.RI "string \fBtake_sound\fP = 'sounds/take\&.wav'"
+.br
+.ti -1c
+.RI "string \fBerror_sound\fP = 'sounds/error\&.wav'"
+.br
+.ti -1c
+.RI "string \fBrestore_sound\fP = 'sounds/restore\&.wav'"
+.br
+.ti -1c
+.RI "string \fBend_sound\fP = 'sounds/end\&.wav'"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Main class handling gameplay, user interactions and graphic events\&. 
+
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIdark_sqaures_color\fP (str): color specifier string for dark sqaures color 
+.br
+\fIlight_sqaures_color\fP (str): color specifier string for light sqaures color 
+.br
+\fIbuttons_color\fP (str): color specifier string for buttons color
+.br
+\fImove_sound\fP (str): stores path to move sound 
+.br
+\fIchoise_sound\fP (str): stores path to choise sound 
+.br
+\fItake_sound\fP (str): stores path to take sound 
+.br
+\fIerror_sound\fP (str): stores path to error sound 
+.br
+\fIrestore_sound\fP (str): stores path to restore sound
+.br
+\fIwin\fP (\fBgraphics\&.GraphWin\fP): window in which game is displayed 
+.br
+\fImega_board\fP (list): all previous board states 
+.br
+\fIboard\fP (list): current board state 
+.br
+\fIchosen_piece\fP (Piece): piece that set_starting_position clicked on 
+.br
+\fIchosen_piece_highlight\fP (\fBgraphics\&.Rectangle\fP): sqaure that marks chosen piece 
+.br
+\fIeg_window\fP (\fBgraphics\&.GraphWin\fP): window which pop up when the game ends 
+.br
+\fIturn\fP (str): color of player which turn it currently is 
+.br
+\fIpieces\fP (dict): stores all pieces according to color
+.br
+\fIprevButton\fP (Button): button used to rewind moves 
+.br
+\fInextButton\fP (Button): button used to forward moves 
+.br
+\fIRestorePosition\fP (Button): button used to Restore position 
+.br
+\fINewGameButton\fP (Button): button used to iniciate new game
+.br
+\fIc_board_nr\fP (int): index of currently diplayed board 
+.br
+\fIlp_reps\fP (list): list of numbers indicating on which move last possible repetition could have occured 
+.br
+\fImoves_no_take\fP (int): number of moves in row whithout taking 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def game\&.Game\&.castle_long ( self,  y,  x)"
+
+.PP
+Move piece of long castling\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP (int): horizontal cooridante of the king 
+.br
+\fIy\fP (int): vertical cooridante of the king 
+.RE
+.PP
+
+.SS "def game\&.Game\&.castle_short ( self,  y,  x)"
+
+.PP
+Move piece of short castling\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP (int): horizontal cooridante of the king 
+.br
+\fIy\fP (int): vertical cooridante of the king 
+.RE
+.PP
+
+.SS "def game\&.Game\&.change_turn ( self)"
+
+.PP
+Changes turn to the opposite\&. 
+.SS "def game\&.Game\&.chosen_piece ( self,  chosen_piece)"
+
+.PP
+Set chosen_piece\&. Assigns and unassings highlight to chosen piece\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIchosen_piece\fP (Piece): piece clicked on by player 
+.RE
+.PP
+
+.SS "def game\&.Game\&.compare_boards ( self,  i)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIi\fP (int): number of board that will be compared to current
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if the compared boards were the same 
+.PP
+False if not 
+.PP
+Kill (str): if spotted a board state that cannot be repeated 
+.RE
+.PP
+
+.SS "def game\&.Game\&.deepcopy ( self,  board)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIboard\fP (list): board that will be deepcopied
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+list: deepcopied board 
+.RE
+.PP
+
+.SS "def game\&.Game\&.draw_board ( self)"
+
+.PP
+Draws board (backround)\&. Draws fields legend\&. 
+.SS "def game\&.Game\&.draw_chosen_board ( self,  board_nr)"
+
+.PP
+Draws chosen board\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIboard_nr\fP (int): number of the board to be drawn 
+.RE
+.PP
+
+.SS "def game\&.Game\&.draw_menu ( self)"
+
+.PP
+Draws sepparating line\&. Draws all buttons in menu\&. 
+.SS "def game\&.Game\&.endgame_window ( self,  text,  draw)"
+
+.PP
+Pops up the endgame window\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItext\fP (str): text that will be displayed in endgame window 
+.br
+\fIdraw\fP (bool): True if game ended in a draw 
+.RE
+.PP
+
+.SS "def game\&.Game\&.fifty_moves_rule ( self)"
+
+.PP
+\fBReturns\fP
+.RS 4
+True if there was 50 moves without taking or moving pawn in row 
+.PP
+False if not 
+.RE
+.PP
+
+.SS "def game\&.Game\&.insufficient_material ( self)"
+
+.PP
+\fBReturns\fP
+.RS 4
+True if there is insufficient material on the board to win @reutrn False if not 
+.RE
+.PP
+
+.SS "def game\&.Game\&.make_move ( self,  x,  y)"
+
+.PP
+Checks if square that player clicked on is square on which chosen piece can move, if so it execute that move\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP (int): horizontal coordinate of clicked square 
+.br
+\fIy\fP (int): vertical coordinate of clicked square
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if square that player clicked on is square on which chosen piece can move @reutrn False if not 
+.RE
+.PP
+
+.SS "def game\&.Game\&.move_piece ( self,  y,  x,  piece_to_move)"
+
+.PP
+Changes places of piece in the board\&. Initiate move_piece for the piece (changing coordinates)\&. Decects if promotion occurs and iniciate it\&. If moved piece is Rook or King assings on which move it was moved (declaining castle rights)\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIpiece_to_move\fP (piece): piece that designated to move 
+.br
+\fIx\fP (int): piece will move to this cooridante 
+.br
+\fIy\fP (int): piece will move to this cooridante 
+.RE
+.PP
+
+.SS "def game\&.Game\&.play_sound ( self,  sound)"
+
+.PP
+Creates new thread\&. Plays sounds in the new thread\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIsound\fP (str): path to chosen sounds 
+.RE
+.PP
+
+.SS "def game\&.Game\&.play_sound_thread ( self,  sound)"
+
+.PP
+Target function for thread\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsound\fP (str): path to chosen sounds 
+.RE
+.PP
+
+.SS "def game\&.Game\&.px_to_index ( self,  value)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalue\fP (int, float): value in pixels
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int: value of index containing given pixel value 
+.RE
+.PP
+
+.SS "def game\&.Game\&.restore ( self,  board_nr)"
+
+.PP
+Restores board of given number\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIboard_nr\fP (int): number of the board to be restored 
+.RE
+.PP
+
+.SS "def game\&.Game\&.take_piece ( self,  y,  x)"
+
+.PP
+Removes taken piece\&. Resets moves without taking counter\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIpiece_to_move\fP (piece): piece that designated to move 
+.br
+\fIx\fP (int): horizontal cooridante of piece that will be removed 
+.br
+\fIy\fP (int): vertical cooridante of piece that will be removed 
+.RE
+.PP
+
+.SS "def game\&.Game\&.threefold_repetition ( self)"
+
+.PP
+\fBReturns\fP
+.RS 4
+True if there is the position was repeted 3 times 
+.PP
+False if not 
+.RE
+.PP
+
+.SS "def game\&.Game\&.wait_for_input ( self)"
+
+.PP
+Waits for mouse input\&. Acts accordingly to input\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chess App from the source code\&.

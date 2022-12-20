@@ -1,0 +1,95 @@
+.TH "pieces.Queen" 3 "Mon Dec 19 2022" "Chess App" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pieces.Queen \- stores properities of \fBQueen\fP, inherits form \fBBishop\fP and \fBRook\fP class  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBpieces\&.Bishop\fP, and \fBpieces\&.Rook\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, color, y, x, win)"
+.br
+.ti -1c
+.RI "def \fBall_moves\fP (self, board, check_king_safety=True)"
+.br
+.RI "Creates list of all possible moves that \fBQueen\fP object can make and changes list if king is not safe\&. "
+.ti -1c
+.RI "def \fB__str__\fP (self)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBcolor\fP"
+.br
+.ti -1c
+.RI "\fBimg_url\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBwhite_img_url\fP = 'pieces/w_queen_png_shadow_128px\&.png'"
+.br
+.ti -1c
+.RI "string \fBblack_img_url\fP = 'pieces/b_queen_png_shadow_128px\&.png'"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+stores properities of \fBQueen\fP, inherits form \fBBishop\fP and \fBRook\fP class 
+
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIwhite_img_url\fP (str): path to white \fBQueen\fP png 
+.br
+\fIblack_img_url\fP (str): path to black \fBQueen\fP png 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pieces\&.Queen\&.__init__ ( self,  color,  y,  x,  win)"
+
+.PP
+Reimplemented from \fBpieces\&.Rook\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def pieces\&.Queen\&.__str__ ( self)"
+
+.PP
+Reimplemented from \fBpieces\&.Rook\fP\&.
+.SS "def pieces\&.Queen\&.all_moves ( self,  board,  check_king_safety = \fCTrue\fP)"
+
+.PP
+Creates list of all possible moves that \fBQueen\fP object can make and changes list if king is not safe\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fP board (list): stores all pieces in appropiate fields 
+.br
+\fI\fP check_king_safety (bool): information about king safety
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+moves (list): stores coordinates of all possible fields where object can move all \fBBishop\fP moves + all \fBRook\fP moves 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBpieces\&.Rook\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chess App from the source code\&.

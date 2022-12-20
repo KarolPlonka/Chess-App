@@ -1,0 +1,120 @@
+.TH "graphics.GraphicsObject" 3 "Mon Dec 19 2022" "Chess App" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+graphics.GraphicsObject
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBgraphics\&.Entry\fP, \fBgraphics\&.Image\fP, \fBgraphics\&.Point\fP, \fBgraphics\&.Polygon\fP, \fBgraphics\&.Text\fP, and \fBgraphics\&._BBox\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, options)"
+.br
+.ti -1c
+.RI "def \fBsetFill\fP (self, color)"
+.br
+.ti -1c
+.RI "def \fBsetOutline\fP (self, color)"
+.br
+.ti -1c
+.RI "def \fBsetWidth\fP (self, width)"
+.br
+.ti -1c
+.RI "def \fBdraw\fP (self, graphwin)"
+.br
+.ti -1c
+.RI "def \fBundraw\fP (self)"
+.br
+.ti -1c
+.RI "def \fBmove\fP (self, dx, dy)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBcanvas\fP"
+.br
+.ti -1c
+.RI "\fBid\fP"
+.br
+.ti -1c
+.RI "\fBconfig\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Generic base class for all of the drawable objects
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def graphics\&.GraphicsObject\&.draw ( self,  graphwin)"
+
+.PP
+.nf
+Draw the object in graphwin, which should be a GraphWin
+object\&.  A GraphicsObject may only be drawn into one
+window\&. Raises an error if attempt made to draw an object that
+is already visible\&.
+.fi
+.PP
+ 
+.SS "def graphics\&.GraphicsObject\&.move ( self,  dx,  dy)"
+
+.PP
+.nf
+move object dx units in x direction and dy units in y
+direction
+.fi
+.PP
+ 
+.SS "def graphics\&.GraphicsObject\&.setFill ( self,  color)"
+
+.PP
+.nf
+Set interior color to color
+.fi
+.PP
+ 
+.PP
+Reimplemented in \fBgraphics\&.Entry\fP\&.
+.SS "def graphics\&.GraphicsObject\&.setOutline ( self,  color)"
+
+.PP
+.nf
+Set outline color to color
+.fi
+.PP
+ 
+.SS "def graphics\&.GraphicsObject\&.setWidth ( self,  width)"
+
+.PP
+.nf
+Set line weight to width
+.fi
+.PP
+ 
+.SS "def graphics\&.GraphicsObject\&.undraw ( self)"
+
+.PP
+.nf
+Undraw the object (i\&.e\&. hide it)\&. Returns silently if the
+object is not currently drawn\&.
+.fi
+.PP
+ 
+.PP
+Reimplemented in \fBgraphics\&.Image\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chess App from the source code\&.

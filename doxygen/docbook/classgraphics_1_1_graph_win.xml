@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgraphics_1_1_graph_win" xml:lang="en-US">
+<title>graphics.GraphWin Class Reference</title>
+<indexterm><primary>graphics.GraphWin</primary></indexterm>
+<para>
+
+<para>Graphics classes start here. </para>
+ 
+</para>
+<para>Inheritance diagram for graphics.GraphWin:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgraphics_1_1_graph_win.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1abaf17e0a7d09fe97cbb23f03ca545339"/>def <emphasis role="strong">__init__</emphasis> (self, title=&quot;Graphics Window&quot;, width=200, height=200, autoflush=True)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1afc6d29fa1772c46ec5f1c8917c0dfa36"/>def <emphasis role="strong">__repr__</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1a47a25afdbc0a778241b364142caf862e"/>def <emphasis role="strong">__str__</emphasis> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graph_win_1aec4e7921def91d795367eef63054a4df">setBackground</link> (self, color)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graph_win_1a9f5ef08db39c026392b093c2d0a7fbe9">setCoords</link> (self, x1, y1, x2, y2)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graph_win_1a760daa823490308117c5ce3ea2946bfb">close</link> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1a77f97f64e8d3dddcef5d3c345ffedc6d"/>def <emphasis role="strong">isClosed</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1a1a3732b58c2ffc8960be3a9f66bd4df8"/>def <emphasis role="strong">isOpen</emphasis> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graph_win_1ac93adafee6ea1c0d9bb32b64cfbe754c">plot</link> (self, x, y, color=&quot;black&quot;)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graph_win_1a66ef7f9b272d4ef482f834855ccfa0c4">plotPixel</link> (self, x, y, color=&quot;black&quot;)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graph_win_1a232137e7f2464c4ed6fa4a6fd5022196">flush</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graph_win_1a4fdf1cf728e9aa559f2912592f66c23e">getMouse</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graph_win_1a47a21f43176302d35e418810c88235ea">checkMouse</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graph_win_1adf821f120ef3baf805a4945b009b4903">getKey</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graph_win_1a84c703d3a1521fc5edb4fd8af462ebd1">checkKey</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graph_win_1a100d08973109234fa8b17ccc0ac3ff89">getHeight</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_graph_win_1a5bad6bf8b35250baf4f4b45993f85162">getWidth</link> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1a4dfd70dc27ff32544c0eee0e73f52c36"/>def <emphasis role="strong">toScreen</emphasis> (self, x, y)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1a6c40e111bf739598f2128c95977caff7"/>def <emphasis role="strong">toWorld</emphasis> (self, x, y)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1a6b0162764403abcbb64d3de5a8e21c1c"/>def <emphasis role="strong">setMouseHandler</emphasis> (self, func)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1acb38179ff82c99fe11e5150e2fbbf1e4"/>def <emphasis role="strong">addItem</emphasis> (self, item)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1a617ee0e44a58c66c06df5d4d51edbee5"/>def <emphasis role="strong">delItem</emphasis> (self, item)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1afd181d963aa18c8f8215c114d6124b72"/>def <emphasis role="strong">redraw</emphasis> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1acd60a861291a9a2a0357422052de423e"/><emphasis role="strong">foreground</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1aa5eb438d0f6bcf9b48cf752bc970492d"/><emphasis role="strong">items</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1a048ee90a088e92ea85449aa4e2dc14e8"/><emphasis role="strong">mouseX</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1a6c44740c795384fad61d1d5a3465d4f5"/><emphasis role="strong">mouseY</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1ac54dcaf8cf4b5d8d4e50ba66636e3804"/><emphasis role="strong">height</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1a8725576095977a7867e61028bf67168a"/><emphasis role="strong">width</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1a678b9a9c46f93e11dc5f76c8503c7888"/><emphasis role="strong">autoflush</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1abceec8568a7d09be0d0461bd32a15225"/><emphasis role="strong">trans</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1aa479363c78ec2ffd05065887abd5851e"/><emphasis role="strong">closed</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_graph_win_1a345868afb0c992bd31b20b02e6593bbb"/><emphasis role="strong">lastKey</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Graphics classes start here. </para>
+
+
+
+<para><literallayout><computeroutput>A GraphWin is a toplevel window for displaying graphics.</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgraphics_1_1_graph_win_1a84c703d3a1521fc5edb4fd8af462ebd1"/><section>
+    <title>checkKey()</title>
+<indexterm><primary>checkKey</primary><secondary>graphics.GraphWin</secondary></indexterm>
+<indexterm><primary>graphics.GraphWin</primary><secondary>checkKey</secondary></indexterm>
+<para><computeroutput>def graphics.GraphWin.checkKey ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return last key pressed or None if no key pressed since last call</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graph_win_1a47a21f43176302d35e418810c88235ea"/><section>
+    <title>checkMouse()</title>
+<indexterm><primary>checkMouse</primary><secondary>graphics.GraphWin</secondary></indexterm>
+<indexterm><primary>graphics.GraphWin</primary><secondary>checkMouse</secondary></indexterm>
+<para><computeroutput>def graphics.GraphWin.checkMouse ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return last mouse click or None if mouse has
+not been clicked since last call</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graph_win_1a760daa823490308117c5ce3ea2946bfb"/><section>
+    <title>close()</title>
+<indexterm><primary>close</primary><secondary>graphics.GraphWin</secondary></indexterm>
+<indexterm><primary>graphics.GraphWin</primary><secondary>close</secondary></indexterm>
+<para><computeroutput>def graphics.GraphWin.close ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Close the window</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graph_win_1a232137e7f2464c4ed6fa4a6fd5022196"/><section>
+    <title>flush()</title>
+<indexterm><primary>flush</primary><secondary>graphics.GraphWin</secondary></indexterm>
+<indexterm><primary>graphics.GraphWin</primary><secondary>flush</secondary></indexterm>
+<para><computeroutput>def graphics.GraphWin.flush ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update drawing to the window</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graph_win_1a100d08973109234fa8b17ccc0ac3ff89"/><section>
+    <title>getHeight()</title>
+<indexterm><primary>getHeight</primary><secondary>graphics.GraphWin</secondary></indexterm>
+<indexterm><primary>graphics.GraphWin</primary><secondary>getHeight</secondary></indexterm>
+<para><computeroutput>def graphics.GraphWin.getHeight ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the height of the window</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graph_win_1adf821f120ef3baf805a4945b009b4903"/><section>
+    <title>getKey()</title>
+<indexterm><primary>getKey</primary><secondary>graphics.GraphWin</secondary></indexterm>
+<indexterm><primary>graphics.GraphWin</primary><secondary>getKey</secondary></indexterm>
+<para><computeroutput>def graphics.GraphWin.getKey ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Wait for user to press a key and return it as a string.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graph_win_1a4fdf1cf728e9aa559f2912592f66c23e"/><section>
+    <title>getMouse()</title>
+<indexterm><primary>getMouse</primary><secondary>graphics.GraphWin</secondary></indexterm>
+<indexterm><primary>graphics.GraphWin</primary><secondary>getMouse</secondary></indexterm>
+<para><computeroutput>def graphics.GraphWin.getMouse ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Wait for mouse click and return Point object representing
+the click</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graph_win_1a5bad6bf8b35250baf4f4b45993f85162"/><section>
+    <title>getWidth()</title>
+<indexterm><primary>getWidth</primary><secondary>graphics.GraphWin</secondary></indexterm>
+<indexterm><primary>graphics.GraphWin</primary><secondary>getWidth</secondary></indexterm>
+<para><computeroutput>def graphics.GraphWin.getWidth ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the width of the window</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graph_win_1ac93adafee6ea1c0d9bb32b64cfbe754c"/><section>
+    <title>plot()</title>
+<indexterm><primary>plot</primary><secondary>graphics.GraphWin</secondary></indexterm>
+<indexterm><primary>graphics.GraphWin</primary><secondary>plot</secondary></indexterm>
+<para><computeroutput>def graphics.GraphWin.plot ( self,  x,  y,  color = <computeroutput>&quot;black&quot;</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set pixel (x,y) to the given color</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graph_win_1a66ef7f9b272d4ef482f834855ccfa0c4"/><section>
+    <title>plotPixel()</title>
+<indexterm><primary>plotPixel</primary><secondary>graphics.GraphWin</secondary></indexterm>
+<indexterm><primary>graphics.GraphWin</primary><secondary>plotPixel</secondary></indexterm>
+<para><computeroutput>def graphics.GraphWin.plotPixel ( self,  x,  y,  color = <computeroutput>&quot;black&quot;</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set pixel raw (independent of window coordinates) pixel
+(x,y) to color</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graph_win_1aec4e7921def91d795367eef63054a4df"/><section>
+    <title>setBackground()</title>
+<indexterm><primary>setBackground</primary><secondary>graphics.GraphWin</secondary></indexterm>
+<indexterm><primary>graphics.GraphWin</primary><secondary>setBackground</secondary></indexterm>
+<para><computeroutput>def graphics.GraphWin.setBackground ( self,  color)</computeroutput></para>
+<para><literallayout><computeroutput>Set background color of the window</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgraphics_1_1_graph_win_1a9f5ef08db39c026392b093c2d0a7fbe9"/><section>
+    <title>setCoords()</title>
+<indexterm><primary>setCoords</primary><secondary>graphics.GraphWin</secondary></indexterm>
+<indexterm><primary>graphics.GraphWin</primary><secondary>setCoords</secondary></indexterm>
+<para><computeroutput>def graphics.GraphWin.setCoords ( self,  x1,  y1,  x2,  y2)</computeroutput></para>
+<para><literallayout><computeroutput>Set coordinates of window to run from (x1,y1) in the
+lower-left corner to (x2,y2) in the upper-right corner.</computeroutput></literallayout> </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+graphics.py</section>
+</section>

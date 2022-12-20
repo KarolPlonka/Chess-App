@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbuttons_1_1next_button" xml:lang="en-US">
+<title>buttons.nextButton Class Reference</title>
+<indexterm><primary>buttons.nextButton</primary></indexterm>
+<para>
+
+<para><link linkend="_classbuttons_1_1_button">Button</link> used the undo the position by one move. </para>
+ 
+</para>
+<para>Inheritance diagram for buttons.nextButton:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbuttons_1_1next_button.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classbuttons_1_1next_button_1a0f844ae6c853d3b89f2efa991cef8f9c">__init__</link> (self, win, c1, c2, size, m, start_x, start_y)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classbuttons_1_1next_button_1ac278aef5515ba967705a281da6510bb1"/><emphasis role="strong">next_p1</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1next_button_1a3d384a930b91ace8190443c3624376ef"/><emphasis role="strong">next_p2</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1next_button_1a084aea69bb4b7b941574fa0f0907311c"/><emphasis role="strong">end_x</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1next_button_1a2c543c2d45f20fc13aa0a35f6d160e36"/><emphasis role="strong">end_y</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1next_button_1a8bb3e66070efe21d8bfa6f5969d055a7"/><emphasis role="strong">button</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1next_button_1af004162f4c5310e824dca9d071d99008"/><emphasis role="strong">button_t</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_classbuttons_1_1_button">Button</link> used the undo the position by one move. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classbuttons_1_1next_button_1a0f844ae6c853d3b89f2efa991cef8f9c"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>buttons.nextButton</secondary></indexterm>
+<indexterm><primary>buttons.nextButton</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def buttons.nextButton.__init__ ( self,  win,  c1,  c2,  size,  m,  start_x,  start_y)</computeroutput></para><para>
+Reimplemented from <link linkend="_classbuttons_1_1_button">buttons.Button</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+buttons.py</section>
+</section>

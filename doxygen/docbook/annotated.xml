@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
+<title>Class List</title>
+Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_classgraphics_1_1___b_box">graphics._BBox</link><link linkend="_classpieces_1_1_bishop">pieces.Bishop</link>
+<para>Stores properities of <link linkend="_classpieces_1_1_bishop">Bishop</link>, inherits form <link linkend="_classpieces_1_1_piece">Piece</link> class </para>
+<link linkend="_classbuttons_1_1_button">buttons.Button</link>
+<para>Abstarct class for all buttons the inherit from </para>
+<link linkend="_classgraphics_1_1_circle">graphics.Circle</link><link linkend="_classgraphics_1_1_entry">graphics.Entry</link><link linkend="_classgame_1_1_game">game.Game</link>
+<para>Main class handling gameplay, user interactions and graphic events </para>
+<link linkend="_classgraphics_1_1_graphics_error">graphics.GraphicsError</link>
+<para>Module Exceptions </para>
+<link linkend="_classgraphics_1_1_graphics_object">graphics.GraphicsObject</link><link linkend="_classgraphics_1_1_graph_win">graphics.GraphWin</link>
+<para>Graphics classes start here </para>
+<link linkend="_classgraphics_1_1_image">graphics.Image</link><link linkend="_classpieces_1_1_king">pieces.King</link>
+<para>Stores properities of <link linkend="_classpieces_1_1_king">King</link>, inherits form <link linkend="_classpieces_1_1_piece">Piece</link> class </para>
+<link linkend="_classpieces_1_1_knight">pieces.Knight</link>
+<para>Stores properities of <link linkend="_classpieces_1_1_knight">Knight</link>, inherits form <link linkend="_classpieces_1_1_piece">Piece</link> class </para>
+<link linkend="_classgraphics_1_1_line">graphics.Line</link><link linkend="_class_move_1_1_move">Move.Move</link>
+<para>Used to display avalible moves that will be represented as dots on a board </para>
+<link linkend="_classbuttons_1_1next_button">buttons.nextButton</link>
+<para><link linkend="_classbuttons_1_1_button">Button</link> used the undo the position by one move </para>
+<link linkend="_classgraphics_1_1_oval">graphics.Oval</link><link linkend="_classpieces_1_1_pawn">pieces.Pawn</link>
+<para>Stores properities of <link linkend="_classpieces_1_1_pawn">Pawn</link>, inherits form <link linkend="_classpieces_1_1_piece">Piece</link> class </para>
+<link linkend="_classpieces_1_1_piece">pieces.Piece</link>
+<para>Abstract class, where from every piece class inherits </para>
+<link linkend="_classgraphics_1_1_point">graphics.Point</link><link linkend="_classgraphics_1_1_polygon">graphics.Polygon</link><link linkend="_classbuttons_1_1prev_button">buttons.prevButton</link>
+<para><link linkend="_classbuttons_1_1_button">Button</link> used the forward the position by one move </para>
+<link linkend="_classpieces_1_1_queen">pieces.Queen</link>
+<para>Stores properities of <link linkend="_classpieces_1_1_queen">Queen</link>, inherits form <link linkend="_classpieces_1_1_bishop">Bishop</link> and <link linkend="_classpieces_1_1_rook">Rook</link> class </para>
+<link linkend="_classgraphics_1_1_rectangle">graphics.Rectangle</link><link linkend="_classbuttons_1_1_restore_position">buttons.RestorePosition</link>
+<para><link linkend="_classbuttons_1_1_button">Button</link> used the restore the position </para>
+<link linkend="_classpieces_1_1_rook">pieces.Rook</link>
+<para>Stores properities of <link linkend="_classpieces_1_1_rook">Rook</link>, inherits form <link linkend="_classpieces_1_1_piece">Piece</link> class </para>
+<link linkend="_classgraphics_1_1_text">graphics.Text</link><link linkend="_classgraphics_1_1_transform">graphics.Transform</link></section>

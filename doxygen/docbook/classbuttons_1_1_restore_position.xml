@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbuttons_1_1_restore_position" xml:lang="en-US">
+<title>buttons.RestorePosition Class Reference</title>
+<indexterm><primary>buttons.RestorePosition</primary></indexterm>
+<para>
+
+<para><link linkend="_classbuttons_1_1_button">Button</link> used the restore the position. </para>
+ 
+</para>
+<para>Inheritance diagram for buttons.RestorePosition:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbuttons_1_1_restore_position.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classbuttons_1_1_restore_position_1a50870766166666b39cc2b8eea0a03525">__init__</link> (self, win, c1, c2, m, start_x, end_x, start_y, end_y, txt)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classbuttons_1_1_restore_position_1ada14055b965c8c69057d7f37e19107e0">draw_button</link> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_restore_position_1a71e6f663f6fceb4fbb40bade72490460"/>def <emphasis role="strong">undraw_button</emphasis> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_restore_position_1a9c33eee4238e612828bd01013842f6f7"/><emphasis role="strong">win</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_restore_position_1a2b0a842c84f5d84b9c0a52d49525370f"/><emphasis role="strong">is_active</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_restore_position_1a7ba5f399747cc42793b9d57123d1cf00"/><emphasis role="strong">start_x</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_restore_position_1aacca745f2eed96d3a7dd9d0469e2e393"/><emphasis role="strong">end_x</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_restore_position_1ae2beea47c421da1265dd2541ba44753b"/><emphasis role="strong">start_y</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_restore_position_1afc3ada2d35452485ca11bee05c688114"/><emphasis role="strong">end_y</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_restore_position_1a6a8bfb9afd231b752e906c10913dc67f"/><emphasis role="strong">button</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_restore_position_1a8a54129f915b33cb5fbc9ae453804ac8"/><emphasis role="strong">txt</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_classbuttons_1_1_button">Button</link> used the restore the position. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classbuttons_1_1_restore_position_1a50870766166666b39cc2b8eea0a03525"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>buttons.RestorePosition</secondary></indexterm>
+<indexterm><primary>buttons.RestorePosition</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def buttons.RestorePosition.__init__ ( self,  win,  c1,  c2,  m,  start_x,  end_x,  start_y,  end_y,  txt)</computeroutput></para><para>
+Reimplemented from <link linkend="_classbuttons_1_1_button">buttons.Button</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classbuttons_1_1_restore_position_1ada14055b965c8c69057d7f37e19107e0"/><section>
+    <title>draw_button()</title>
+<indexterm><primary>draw_button</primary><secondary>buttons.RestorePosition</secondary></indexterm>
+<indexterm><primary>buttons.RestorePosition</primary><secondary>draw_button</secondary></indexterm>
+<para><computeroutput>def buttons.RestorePosition.draw_button ( self)</computeroutput></para><para>
+Reimplemented from <link linkend="_classbuttons_1_1_button">buttons.Button</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+buttons.py</section>
+</section>

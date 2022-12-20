@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classpieces_1_1_queen" xml:lang="en-US">
+<title>pieces.Queen Class Reference</title>
+<indexterm><primary>pieces.Queen</primary></indexterm>
+<para>
+
+<para>stores properities of <link linkend="_classpieces_1_1_queen">Queen</link>, inherits form <link linkend="_classpieces_1_1_bishop">Bishop</link> and <link linkend="_classpieces_1_1_rook">Rook</link> class </para>
+ 
+</para>
+<para>Inheritance diagram for pieces.Queen:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classpieces_1_1_queen.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classpieces_1_1_queen_1a07881691943705613eeeba9ee1ff9f44">__init__</link> (self, color, y, x, win)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classpieces_1_1_queen_1abd50acb180926c036a51bf43ac4fccc8">all_moves</link> (self, board, check_king_safety=True)</para>
+
+<para>Creates list of all possible moves that <link linkend="_classpieces_1_1_queen">Queen</link> object can make and changes list if king is not safe. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classpieces_1_1_queen_1a376b1f76d24b102f72b25ba7bf0114fe">__str__</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classpieces_1_1_queen_1adae34345ac1b666a10ac91e5140b45f6"/><emphasis role="strong">color</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classpieces_1_1_queen_1a0fe90b94c25c140f65158913b9b1d09d"/><emphasis role="strong">img_url</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classpieces_1_1_queen_1af5934d9a83a0c636348ea9f29ae8a024"/>string <emphasis role="strong">white_img_url</emphasis> = &apos;pieces/w_queen_png_shadow_128px.png&apos;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classpieces_1_1_queen_1a130140e2e090a2dceeb8f6acb4eda965"/>string <emphasis role="strong">black_img_url</emphasis> = &apos;pieces/b_queen_png_shadow_128px.png&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>stores properities of <link linkend="_classpieces_1_1_queen">Queen</link>, inherits form <link linkend="_classpieces_1_1_bishop">Bishop</link> and <link linkend="_classpieces_1_1_rook">Rook</link> class </para>
+
+
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>white_img_url</entry><entry>
+<para>(str): path to white <link linkend="_classpieces_1_1_queen">Queen</link> png </para>
+</entry>
+                            </row>
+                            <row>
+<entry>black_img_url</entry><entry>
+<para>(str): path to black <link linkend="_classpieces_1_1_queen">Queen</link> png </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classpieces_1_1_queen_1a07881691943705613eeeba9ee1ff9f44"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>pieces.Queen</secondary></indexterm>
+<indexterm><primary>pieces.Queen</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def pieces.Queen.__init__ ( self,  color,  y,  x,  win)</computeroutput></para><para>
+Reimplemented from <link linkend="_classpieces_1_1_rook">pieces.Rook</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classpieces_1_1_queen_1a376b1f76d24b102f72b25ba7bf0114fe"/><section>
+    <title>__str__()</title>
+<indexterm><primary>__str__</primary><secondary>pieces.Queen</secondary></indexterm>
+<indexterm><primary>pieces.Queen</primary><secondary>__str__</secondary></indexterm>
+<para><computeroutput>def pieces.Queen.__str__ ( self)</computeroutput></para><para>
+Reimplemented from <link linkend="_classpieces_1_1_rook">pieces.Rook</link>.</para>
+</section>
+<anchor xml:id="_classpieces_1_1_queen_1abd50acb180926c036a51bf43ac4fccc8"/><section>
+    <title>all_moves()</title>
+<indexterm><primary>all_moves</primary><secondary>pieces.Queen</secondary></indexterm>
+<indexterm><primary>pieces.Queen</primary><secondary>all_moves</secondary></indexterm>
+<para><computeroutput>def pieces.Queen.all_moves ( self,  board,  check_king_safety = <computeroutput>True</computeroutput>
+)</computeroutput></para><para>
+
+<para>Creates list of all possible moves that <link linkend="_classpieces_1_1_queen">Queen</link> object can make and changes list if king is not safe. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry></entry><entry>
+<para>board (list): stores all pieces in appropiate fields </para>
+</entry>
+                            </row>
+                            <row>
+<entry></entry><entry>
+<para>check_king_safety (bool): information about king safety</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>moves (list): stores coordinates of all possible fields where object can move all <link linkend="_classpieces_1_1_bishop">Bishop</link> moves + all <link linkend="_classpieces_1_1_rook">Rook</link> moves </para>
+</formalpara>
+</para>
+<para>
+Reimplemented from <link linkend="_classpieces_1_1_rook_1a75f3c60a51ca3de1f0f0a2e0120164df">pieces.Rook</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+pieces.py</section>
+</section>

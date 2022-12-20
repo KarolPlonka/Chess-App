@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgraphics_1_1_entry" xml:lang="en-US">
+<title>graphics.Entry Class Reference</title>
+<indexterm><primary>graphics.Entry</primary></indexterm>
+<para>Inheritance diagram for graphics.Entry:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgraphics_1_1_entry.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classgraphics_1_1_entry_1afb968169b4da90b66fd7cc34ffe8d93a">__init__</link> (self, p, width)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1aea5b15bc4da7ede46e7cdd9991748c9e"/>def <emphasis role="strong">__repr__</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1a0a09f97f04f3d54bf8a5ca3edf99ef19"/>def <emphasis role="strong">getText</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1ab0a6e815195a49e1e682eb94d4735c9e"/>def <emphasis role="strong">getAnchor</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1a15f95f96006286fead5e136792932434"/>def <emphasis role="strong">clone</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1a6a8f8c6cbc38f8efabe66785f09c735c"/>def <emphasis role="strong">setText</emphasis> (self, t)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_entry_1ad1d04de2ffd36b0b6d6733fe992303ee">setFill</link> (self, color)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1abaaf60215354bfbcecbd506e7176d54b"/>def <emphasis role="strong">setFace</emphasis> (self, face)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1a0e4a339c1fa89e228f750b7d5c6d8ced"/>def <emphasis role="strong">setSize</emphasis> (self, size)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1aa36a5f9e71331b921f0728c25631d9c3"/>def <emphasis role="strong">setStyle</emphasis> (self, style)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1a44e4c12f4ec190351fc8dc29bf7f0a37"/>def <emphasis role="strong">setTextColor</emphasis> (self, color)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1a80e7267b0c2117459d13532c253e608f"/><emphasis role="strong">anchor</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1a3c71a6cb1110ae9da3edef095fbb61e5"/><emphasis role="strong">width</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1ad606e7fd6c89a56ffd6c35385bc050e6"/><emphasis role="strong">text</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1aaa0a15f51427af10dd5adc7e0aa3d553"/><emphasis role="strong">fill</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1a96d564c2ac5f5bc21e6353f7b6e702c1"/><emphasis role="strong">color</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1a03940868372e90882d320d9a402dec14"/><emphasis role="strong">font</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_entry_1a344bdacc19d9c10e355e21357a94c38d"/><emphasis role="strong">entry</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgraphics_1_1_entry_1afb968169b4da90b66fd7cc34ffe8d93a"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>graphics.Entry</secondary></indexterm>
+<indexterm><primary>graphics.Entry</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def graphics.Entry.__init__ ( self,  p,  width)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgraphics_1_1_graphics_object">graphics.GraphicsObject</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgraphics_1_1_entry_1ad1d04de2ffd36b0b6d6733fe992303ee"/><section>
+    <title>setFill()</title>
+<indexterm><primary>setFill</primary><secondary>graphics.Entry</secondary></indexterm>
+<indexterm><primary>graphics.Entry</primary><secondary>setFill</secondary></indexterm>
+<para><computeroutput>def graphics.Entry.setFill ( self,  color)</computeroutput></para>
+<para><literallayout><computeroutput>Set interior color to color</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classgraphics_1_1_graphics_object_1acfba33cbf63f5333f961b86e988fc292">graphics.GraphicsObject</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+graphics.py</section>
+</section>

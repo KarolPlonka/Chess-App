@@ -1,0 +1,78 @@
+.TH "buttons.Button" 3 "Mon Dec 19 2022" "Chess App" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+buttons.Button \- Abstarct class for all buttons the inherit from\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBbuttons\&.RestorePosition\fP, \fBbuttons\&.nextButton\fP, and \fBbuttons\&.prevButton\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, win, c1, c2, size, m, start_x, start_y)"
+.br
+.ti -1c
+.RI "def \fBbuttons_type\fP (self, type)"
+.br
+.ti -1c
+.RI "def \fBdeactivate\fP (self)"
+.br
+.ti -1c
+.RI "def \fBactivate\fP (self)"
+.br
+.ti -1c
+.RI "def \fBdraw_button\fP (self)"
+.br
+.ti -1c
+.RI "def \fBbutton_parameters\fP (self)"
+.br
+.ti -1c
+.RI "def \fBclicked\fP (self, click_x, click_y)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBwin\fP"
+.br
+.ti -1c
+.RI "\fBc1\fP"
+.br
+.ti -1c
+.RI "\fBc2\fP"
+.br
+.ti -1c
+.RI "\fBis_active\fP"
+.br
+.ti -1c
+.RI "\fBsize\fP"
+.br
+.ti -1c
+.RI "\fBm\fP"
+.br
+.ti -1c
+.RI "\fBstart_x\fP"
+.br
+.ti -1c
+.RI "\fBstart_y\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBdisabled_color\fP = color_rgb(116, 100, 116)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Abstarct class for all buttons the inherit from\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chess App from the source code\&.

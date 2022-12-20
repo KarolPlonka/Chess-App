@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgraphics_1_1_oval" xml:lang="en-US">
+<title>graphics.Oval Class Reference</title>
+<indexterm><primary>graphics.Oval</primary></indexterm>
+<para>Inheritance diagram for graphics.Oval:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgraphics_1_1_oval.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classgraphics_1_1_oval_1ac24c500a6feba342c3459fbfe5fee794">__init__</link> (self, p1, p2)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_oval_1a7a3e92c1b76ffe75cbc18e49daa159ab"/>def <emphasis role="strong">__repr__</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_oval_1af914fb35dc36e36f1ba2f43679b8f0a1"/>def <emphasis role="strong">clone</emphasis> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgraphics_1_1_oval_1ac24c500a6feba342c3459fbfe5fee794"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>graphics.Oval</secondary></indexterm>
+<indexterm><primary>graphics.Oval</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def graphics.Oval.__init__ ( self,  p1,  p2)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgraphics_1_1___b_box">graphics._BBox</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+graphics.py</section>
+</section>

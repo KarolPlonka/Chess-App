@@ -1,0 +1,235 @@
+.TH "graphics.GraphWin" 3 "Mon Dec 19 2022" "Chess App" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+graphics.GraphWin \- Graphics classes start here\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits tk\&.Canvas\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, title='Graphics Window', width=200, height=200, autoflush=True)"
+.br
+.ti -1c
+.RI "def \fB__repr__\fP (self)"
+.br
+.ti -1c
+.RI "def \fB__str__\fP (self)"
+.br
+.ti -1c
+.RI "def \fBsetBackground\fP (self, color)"
+.br
+.ti -1c
+.RI "def \fBsetCoords\fP (self, x1, y1, x2, y2)"
+.br
+.ti -1c
+.RI "def \fBclose\fP (self)"
+.br
+.ti -1c
+.RI "def \fBisClosed\fP (self)"
+.br
+.ti -1c
+.RI "def \fBisOpen\fP (self)"
+.br
+.ti -1c
+.RI "def \fBplot\fP (self, x, y, color='black')"
+.br
+.ti -1c
+.RI "def \fBplotPixel\fP (self, x, y, color='black')"
+.br
+.ti -1c
+.RI "def \fBflush\fP (self)"
+.br
+.ti -1c
+.RI "def \fBgetMouse\fP (self)"
+.br
+.ti -1c
+.RI "def \fBcheckMouse\fP (self)"
+.br
+.ti -1c
+.RI "def \fBgetKey\fP (self)"
+.br
+.ti -1c
+.RI "def \fBcheckKey\fP (self)"
+.br
+.ti -1c
+.RI "def \fBgetHeight\fP (self)"
+.br
+.ti -1c
+.RI "def \fBgetWidth\fP (self)"
+.br
+.ti -1c
+.RI "def \fBtoScreen\fP (self, x, y)"
+.br
+.ti -1c
+.RI "def \fBtoWorld\fP (self, x, y)"
+.br
+.ti -1c
+.RI "def \fBsetMouseHandler\fP (self, func)"
+.br
+.ti -1c
+.RI "def \fBaddItem\fP (self, item)"
+.br
+.ti -1c
+.RI "def \fBdelItem\fP (self, item)"
+.br
+.ti -1c
+.RI "def \fBredraw\fP (self)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBforeground\fP"
+.br
+.ti -1c
+.RI "\fBitems\fP"
+.br
+.ti -1c
+.RI "\fBmouseX\fP"
+.br
+.ti -1c
+.RI "\fBmouseY\fP"
+.br
+.ti -1c
+.RI "\fBheight\fP"
+.br
+.ti -1c
+.RI "\fBwidth\fP"
+.br
+.ti -1c
+.RI "\fBautoflush\fP"
+.br
+.ti -1c
+.RI "\fBtrans\fP"
+.br
+.ti -1c
+.RI "\fBclosed\fP"
+.br
+.ti -1c
+.RI "\fBlastKey\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Graphics classes start here\&. 
+
+
+.PP
+.nf
+A GraphWin is a toplevel window for displaying graphics\&.
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def graphics\&.GraphWin\&.checkKey ( self)"
+
+.PP
+.nf
+Return last key pressed or None if no key pressed since last call
+.fi
+.PP
+ 
+.SS "def graphics\&.GraphWin\&.checkMouse ( self)"
+
+.PP
+.nf
+Return last mouse click or None if mouse has
+not been clicked since last call
+.fi
+.PP
+ 
+.SS "def graphics\&.GraphWin\&.close ( self)"
+
+.PP
+.nf
+Close the window
+.fi
+.PP
+ 
+.SS "def graphics\&.GraphWin\&.flush ( self)"
+
+.PP
+.nf
+Update drawing to the window
+.fi
+.PP
+ 
+.SS "def graphics\&.GraphWin\&.getHeight ( self)"
+
+.PP
+.nf
+Return the height of the window
+.fi
+.PP
+ 
+.SS "def graphics\&.GraphWin\&.getKey ( self)"
+
+.PP
+.nf
+Wait for user to press a key and return it as a string\&.
+.fi
+.PP
+ 
+.SS "def graphics\&.GraphWin\&.getMouse ( self)"
+
+.PP
+.nf
+Wait for mouse click and return Point object representing
+the click
+.fi
+.PP
+ 
+.SS "def graphics\&.GraphWin\&.getWidth ( self)"
+
+.PP
+.nf
+Return the width of the window
+.fi
+.PP
+ 
+.SS "def graphics\&.GraphWin\&.plot ( self,  x,  y,  color = \fC'black'\fP)"
+
+.PP
+.nf
+Set pixel (x,y) to the given color
+.fi
+.PP
+ 
+.SS "def graphics\&.GraphWin\&.plotPixel ( self,  x,  y,  color = \fC'black'\fP)"
+
+.PP
+.nf
+Set pixel raw (independent of window coordinates) pixel
+(x,y) to color
+.fi
+.PP
+ 
+.SS "def graphics\&.GraphWin\&.setBackground ( self,  color)"
+
+.PP
+.nf
+Set background color of the window
+.fi
+.PP
+ 
+.SS "def graphics\&.GraphWin\&.setCoords ( self,  x1,  y1,  x2,  y2)"
+
+.PP
+.nf
+Set coordinates of window to run from (x1,y1) in the
+lower-left corner to (x2,y2) in the upper-right corner\&.
+.fi
+.PP
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chess App from the source code\&.

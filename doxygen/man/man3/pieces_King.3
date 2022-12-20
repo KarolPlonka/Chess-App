@@ -1,0 +1,152 @@
+.TH "pieces.King" 3 "Mon Dec 19 2022" "Chess App" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pieces.King \- stores properities of \fBKing\fP, inherits form \fBPiece\fP class  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBpieces\&.Piece\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, color, y, x, win)"
+.br
+.ti -1c
+.RI "def \fBall_moves\fP (self, board, check_king_safety=True)"
+.br
+.RI "Creates list of all possible moves that \fBKing\fP object can make and changes list if king is not safe\&. "
+.ti -1c
+.RI "def \fBking_moves\fP (self, board)"
+.br
+.RI "Creates list of all possible moves that \fBKing\fP object can make\&. "
+.ti -1c
+.RI "def \fBcastle_long\fP (self, board)"
+.br
+.ti -1c
+.RI "def \fBcastle_short\fP (self, board)"
+.br
+.ti -1c
+.RI "def \fB__str__\fP (self)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBis_moved_on_move\fP"
+.br
+.ti -1c
+.RI "\fBcolor\fP"
+.br
+.ti -1c
+.RI "\fBimg_url\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBwhite_img_url\fP = 'pieces/w_king_png_shadow_128px\&.png'"
+.br
+.ti -1c
+.RI "string \fBblack_img_url\fP = 'pieces/b_king_png_shadow_128px\&.png'"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+stores properities of \fBKing\fP, inherits form \fBPiece\fP class 
+
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIwhite_img_url\fP (str): path to white \fBKing\fP png 
+.br
+\fIblack_img_url\fP (str): path to black \fBKing\fP png 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pieces\&.King\&.__init__ ( self,  color,  y,  x,  win)"
+
+.PP
+Reimplemented from \fBpieces\&.Piece\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def pieces\&.King\&.all_moves ( self,  board,  check_king_safety = \fCTrue\fP)"
+
+.PP
+Creates list of all possible moves that \fBKing\fP object can make and changes list if king is not safe\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fP board (list): stores all pieces in appropiate fields 
+.br
+\fI\fP check_king_safety (bool): information about king safety
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+moves (list): stores coordinates of all possible fields where object can move 
+.RE
+.PP
+
+.SS "def pieces\&.King\&.castle_long ( self,  board)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fP board (list): stores all pieces in appropiate fields 
+.br
+\fI\fP check_king_safety (bool): information about king safety
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+moves (list): stores coordinates of all possible fields where object can move after castle_long move 
+.RE
+.PP
+
+.SS "def pieces\&.King\&.castle_short ( self,  board)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fP board (list): stores all pieces in appropiate fields 
+.br
+\fI\fP check_king_safety (bool): information about king safety
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+moves (list): stores coordinates of all possible fields where object can move after castle_short move 
+.RE
+.PP
+
+.SS "def pieces\&.King\&.king_moves ( self,  board)"
+
+.PP
+Creates list of all possible moves that \fBKing\fP object can make\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fP board (list): stores all pieces in appropiate fields 
+.br
+\fI\fP check_king_safety (bool): information about king safety
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+moves (list): stores coordinates of all possible fields where object can move 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chess App from the source code\&.

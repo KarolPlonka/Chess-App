@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classpieces_1_1_bishop" xml:lang="en-US">
+<title>pieces.Bishop Class Reference</title>
+<indexterm><primary>pieces.Bishop</primary></indexterm>
+<para>
+
+<para>stores properities of <link linkend="_classpieces_1_1_bishop">Bishop</link>, inherits form <link linkend="_classpieces_1_1_piece">Piece</link> class </para>
+ 
+</para>
+<para>Inheritance diagram for pieces.Bishop:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classpieces_1_1_bishop.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classpieces_1_1_bishop_1a056788901bb7f2a4fc62bc0e2d045079">__init__</link> (self, color, y, x, win)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classpieces_1_1_bishop_1a91cf7810bced7a2a1195a4cc3c35bab3">all_moves</link> (self, board, check_king_safety=True)</para>
+
+<para>Creates list of all possible moves that <link linkend="_classpieces_1_1_bishop">Bishop</link> object can make and changes list if king is not safe. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classpieces_1_1_bishop_1a1c6f774d98416c23db336809e0b3b2e4">bishop_moves</link> (self, board)</para>
+
+<para>Creates list of all possible moves that <link linkend="_classpieces_1_1_bishop">Bishop</link> object can make. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classpieces_1_1_bishop_1a9671a26f15329fbc1e8f7d5a20354931"/>def <emphasis role="strong">__str__</emphasis> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classpieces_1_1_bishop_1a63c5928263a37ffb08d93e31dbd5deaf"/><emphasis role="strong">color</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classpieces_1_1_bishop_1a99278e095069347732d3f2c923ac5c30"/><emphasis role="strong">img_url</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classpieces_1_1_bishop_1adfd0a0ff6cb9816165297d23f80bcf9e"/>string <emphasis role="strong">white_img_url</emphasis> = &apos;pieces/w_bishop_png_shadow_128px.png&apos;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classpieces_1_1_bishop_1a073c697aa55391b226f3c3febe52c45f"/>string <emphasis role="strong">black_img_url</emphasis> = &apos;pieces/b_bishop_png_shadow_128px.png&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>stores properities of <link linkend="_classpieces_1_1_bishop">Bishop</link>, inherits form <link linkend="_classpieces_1_1_piece">Piece</link> class </para>
+
+
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>white_img_url</entry><entry>
+<para>(str): path to white <link linkend="_classpieces_1_1_bishop">Bishop</link> png </para>
+</entry>
+                            </row>
+                            <row>
+<entry>black_img_url</entry><entry>
+<para>(str): path to black <link linkend="_classpieces_1_1_bishop">Bishop</link> png </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classpieces_1_1_bishop_1a056788901bb7f2a4fc62bc0e2d045079"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>pieces.Bishop</secondary></indexterm>
+<indexterm><primary>pieces.Bishop</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def pieces.Bishop.__init__ ( self,  color,  y,  x,  win)</computeroutput></para><para>
+Reimplemented from <link linkend="_classpieces_1_1_piece">pieces.Piece</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classpieces_1_1_bishop_1a91cf7810bced7a2a1195a4cc3c35bab3"/><section>
+    <title>all_moves()</title>
+<indexterm><primary>all_moves</primary><secondary>pieces.Bishop</secondary></indexterm>
+<indexterm><primary>pieces.Bishop</primary><secondary>all_moves</secondary></indexterm>
+<para><computeroutput>def pieces.Bishop.all_moves ( self,  board,  check_king_safety = <computeroutput>True</computeroutput>
+)</computeroutput></para><para>
+
+<para>Creates list of all possible moves that <link linkend="_classpieces_1_1_bishop">Bishop</link> object can make and changes list if king is not safe. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry></entry><entry>
+<para>board (list): stores all pieces in appropiate fields </para>
+</entry>
+                            </row>
+                            <row>
+<entry></entry><entry>
+<para>check_king_safety (bool): information about king safety</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>moves (list): stores coordinates of all possible fields where object can move </para>
+</formalpara>
+</para>
+<para>
+Reimplemented in <link linkend="_classpieces_1_1_queen_1abd50acb180926c036a51bf43ac4fccc8">pieces.Queen</link>.</para>
+</section>
+<anchor xml:id="_classpieces_1_1_bishop_1a1c6f774d98416c23db336809e0b3b2e4"/><section>
+    <title>bishop_moves()</title>
+<indexterm><primary>bishop_moves</primary><secondary>pieces.Bishop</secondary></indexterm>
+<indexterm><primary>pieces.Bishop</primary><secondary>bishop_moves</secondary></indexterm>
+<para><computeroutput>def pieces.Bishop.bishop_moves ( self,  board)</computeroutput></para><para>
+
+<para>Creates list of all possible moves that <link linkend="_classpieces_1_1_bishop">Bishop</link> object can make. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry></entry><entry>
+<para>board (list): stores all pieces in appropiate fields </para>
+</entry>
+                            </row>
+                            <row>
+<entry></entry><entry>
+<para>check_king_safety (bool): information about king safety</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>moves (list): stores coordinates of all possible fields where object can move </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+pieces.py</section>
+</section>

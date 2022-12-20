@@ -1,0 +1,113 @@
+.TH "Move.Move" 3 "Mon Dec 19 2022" "Chess App" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Move.Move \- Used to display avalible moves that will be represented as dots on a board\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, y, x, win, type=None, castle_way=None)"
+.br
+.ti -1c
+.RI "def \fBtype\fP (self)"
+.br
+.ti -1c
+.RI "def \fBtype\fP (self, type)"
+.br
+.RI "Set move image based on it type\&. "
+.ti -1c
+.RI "def \fBdraw_move\fP (self)"
+.br
+.RI "Draw the move based on cooridnates and type\&. "
+.ti -1c
+.RI "def \fBundraw_move\fP (self)"
+.br
+.RI "Undraw the move\&. "
+.ti -1c
+.RI "def \fB__str__\fP (self)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBy\fP"
+.br
+.ti -1c
+.RI "\fBx\fP"
+.br
+.ti -1c
+.RI "\fBwin\fP"
+.br
+.ti -1c
+.RI "\fBtype\fP"
+.br
+.ti -1c
+.RI "\fBcastle_way\fP"
+.br
+.ti -1c
+.RI "\fBimg\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBstandard_color\fP = 'grey'"
+.br
+.ti -1c
+.RI "\fBtakes_color\fP = color_rgb(225, 78, 102)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Used to display avalible moves that will be represented as dots on a board\&. 
+
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP (int): x coordinate of the move 
+.br
+\fIy\fP (int): y coordinate of the move 
+.br
+\fIwin\fP (\fBgraphics\&.GraphWin\fP): windows in which the move will be drawn
+.br
+\fItype\fP (str) Avalible types: None (standard move), 'takes', 'castle', 'en_passant'
+.br
+\fIcastle_way\fP (str): 'long' or 'short' 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def Move\&.Move\&.draw_move ( self)"
+
+.PP
+Draw the move based on cooridnates and type\&. 
+.SS "def Move\&.Move\&.type ( self,  type)"
+
+.PP
+Set move image based on it type\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItype\fP (str): Type of the move 
+.RE
+.PP
+
+.SS "def Move\&.Move\&.undraw_move ( self)"
+
+.PP
+Undraw the move\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chess App from the source code\&.

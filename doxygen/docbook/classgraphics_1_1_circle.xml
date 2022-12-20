@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgraphics_1_1_circle" xml:lang="en-US">
+<title>graphics.Circle Class Reference</title>
+<indexterm><primary>graphics.Circle</primary></indexterm>
+<para>Inheritance diagram for graphics.Circle:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgraphics_1_1_circle.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classgraphics_1_1_circle_1adf9ab62e2d952cf52cfecba9acfd5660">__init__</link> (self, center, radius)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_circle_1a7acb1acc63613799ff2724cb05d75750">__repr__</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgraphics_1_1_circle_1ae575b71c63ce889e4c872c792d748f7b">clone</link> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_circle_1a420b2e69c4d116c094dc6bd6b1e81839"/>def <emphasis role="strong">getRadius</emphasis> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_circle_1aacc54bd0a94edd646405c8718cbeb47c"/><emphasis role="strong">radius</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgraphics_1_1_circle_1adf9ab62e2d952cf52cfecba9acfd5660"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>graphics.Circle</secondary></indexterm>
+<indexterm><primary>graphics.Circle</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def graphics.Circle.__init__ ( self,  center,  radius)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgraphics_1_1_oval">graphics.Oval</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgraphics_1_1_circle_1a7acb1acc63613799ff2724cb05d75750"/><section>
+    <title>__repr__()</title>
+<indexterm><primary>__repr__</primary><secondary>graphics.Circle</secondary></indexterm>
+<indexterm><primary>graphics.Circle</primary><secondary>__repr__</secondary></indexterm>
+<para><computeroutput>def graphics.Circle.__repr__ ( self)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgraphics_1_1_oval">graphics.Oval</link>.</para>
+</section>
+<anchor xml:id="_classgraphics_1_1_circle_1ae575b71c63ce889e4c872c792d748f7b"/><section>
+    <title>clone()</title>
+<indexterm><primary>clone</primary><secondary>graphics.Circle</secondary></indexterm>
+<indexterm><primary>graphics.Circle</primary><secondary>clone</secondary></indexterm>
+<para><computeroutput>def graphics.Circle.clone ( self)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgraphics_1_1_oval">graphics.Oval</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+graphics.py</section>
+</section>

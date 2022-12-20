@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgraphics_1_1_text" xml:lang="en-US">
+<title>graphics.Text Class Reference</title>
+<indexterm><primary>graphics.Text</primary></indexterm>
+<para>Inheritance diagram for graphics.Text:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgraphics_1_1_text.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classgraphics_1_1_text_1af17676ed39bcc03a78098b22a15ef591">__init__</link> (self, p, text)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_text_1ae0b4ff4a08c45410d4f424a48a6eba59"/>def <emphasis role="strong">__repr__</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_text_1a507a4eea3a7a7de19bfe30ff70cf8fd6"/>def <emphasis role="strong">clone</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_text_1ab8a97b69fe919acb98429b7da81b7d37"/>def <emphasis role="strong">setText</emphasis> (self, text)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_text_1a1697a465c237e26532f43cef1af6abe5"/>def <emphasis role="strong">getText</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_text_1a02525bc36e0af653d17905cd733d0843"/>def <emphasis role="strong">getAnchor</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_text_1ae58860c5531b95e69136a819489a3169"/>def <emphasis role="strong">setFace</emphasis> (self, face)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_text_1a31ea18b7a09603cdb49a4716290ec8fe"/>def <emphasis role="strong">setSize</emphasis> (self, size)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_text_1af2697684710c7471abe9bc8bf0f5fffe"/>def <emphasis role="strong">setStyle</emphasis> (self, style)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_text_1a4ee730f2d0f9a81250b8ca232940fec8"/>def <emphasis role="strong">setTextColor</emphasis> (self, color)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_text_1a24a6cb5416b56cc809da0a358de69db7"/><emphasis role="strong">anchor</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_text_1a9b7d6fa2325a028c73778227d8f9ac99"/><emphasis role="strong">setOutline</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgraphics_1_1_text_1af17676ed39bcc03a78098b22a15ef591"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>graphics.Text</secondary></indexterm>
+<indexterm><primary>graphics.Text</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def graphics.Text.__init__ ( self,  p,  text)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgraphics_1_1_graphics_object">graphics.GraphicsObject</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+graphics.py</section>
+</section>

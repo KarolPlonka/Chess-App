@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classpieces_1_1_knight" xml:lang="en-US">
+<title>pieces.Knight Class Reference</title>
+<indexterm><primary>pieces.Knight</primary></indexterm>
+<para>
+
+<para>stores properities of <link linkend="_classpieces_1_1_knight">Knight</link>, inherits form <link linkend="_classpieces_1_1_piece">Piece</link> class </para>
+ 
+</para>
+<para>Inheritance diagram for pieces.Knight:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classpieces_1_1_knight.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classpieces_1_1_knight_1a6114a6c6c3ababb1c7a898aaa680e749">__init__</link> (self, color, y, x, win)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classpieces_1_1_knight_1abf3fbcd693a5ce090c5f024f34bece23">all_moves</link> (self, board, check_king_safety=True)</para>
+
+<para>Creates list of all possible moves that <link linkend="_classpieces_1_1_knight">Knight</link> object can make and changes list if king is not safe. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classpieces_1_1_knight_1acad44c877c1dc4bfcc7c86c9e6f51487">knight_moves</link> (self, board)</para>
+
+<para>Creates list of all possible moves that <link linkend="_classpieces_1_1_knight">Knight</link> object can make. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classpieces_1_1_knight_1a7c6cac98e9c68ece54d28f165916a5a6"/>def <emphasis role="strong">__str__</emphasis> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classpieces_1_1_knight_1ac95ab82bf23ad73dfb0f386d1a189595"/><emphasis role="strong">color</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classpieces_1_1_knight_1a6cdb460753647be9df21b890f42af4ae"/><emphasis role="strong">img_url</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classpieces_1_1_knight_1abf766cbaaf5cd0f6a836f578e9d115cd"/>string <emphasis role="strong">white_img_url</emphasis> = &apos;pieces/w_knight_png_shadow_128px.png&apos;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classpieces_1_1_knight_1a91fa45fd822d34e3c288443c68082306"/>string <emphasis role="strong">black_img_url</emphasis> = &apos;pieces/b_knight_png_shadow_128px.png&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>stores properities of <link linkend="_classpieces_1_1_knight">Knight</link>, inherits form <link linkend="_classpieces_1_1_piece">Piece</link> class </para>
+
+
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>white_img_url</entry><entry>
+<para>(str): path to white <link linkend="_classpieces_1_1_knight">Knight</link> png </para>
+</entry>
+                            </row>
+                            <row>
+<entry>black_img_url</entry><entry>
+<para>(str): path to black <link linkend="_classpieces_1_1_knight">Knight</link> png </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classpieces_1_1_knight_1a6114a6c6c3ababb1c7a898aaa680e749"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>pieces.Knight</secondary></indexterm>
+<indexterm><primary>pieces.Knight</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def pieces.Knight.__init__ ( self,  color,  y,  x,  win)</computeroutput></para><para>
+Reimplemented from <link linkend="_classpieces_1_1_piece">pieces.Piece</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classpieces_1_1_knight_1abf3fbcd693a5ce090c5f024f34bece23"/><section>
+    <title>all_moves()</title>
+<indexterm><primary>all_moves</primary><secondary>pieces.Knight</secondary></indexterm>
+<indexterm><primary>pieces.Knight</primary><secondary>all_moves</secondary></indexterm>
+<para><computeroutput>def pieces.Knight.all_moves ( self,  board,  check_king_safety = <computeroutput>True</computeroutput>
+)</computeroutput></para><para>
+
+<para>Creates list of all possible moves that <link linkend="_classpieces_1_1_knight">Knight</link> object can make and changes list if king is not safe. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry></entry><entry>
+<para>board (list): stores all pieces in appropiate fields </para>
+</entry>
+                            </row>
+                            <row>
+<entry></entry><entry>
+<para>check_king_safety (bool): information about king safety</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>moves (list): stores coordinates of all possible fields where object can move </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classpieces_1_1_knight_1acad44c877c1dc4bfcc7c86c9e6f51487"/><section>
+    <title>knight_moves()</title>
+<indexterm><primary>knight_moves</primary><secondary>pieces.Knight</secondary></indexterm>
+<indexterm><primary>pieces.Knight</primary><secondary>knight_moves</secondary></indexterm>
+<para><computeroutput>def pieces.Knight.knight_moves ( self,  board)</computeroutput></para><para>
+
+<para>Creates list of all possible moves that <link linkend="_classpieces_1_1_knight">Knight</link> object can make. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry></entry><entry>
+<para>board (list): stores all pieces in appropiate fields</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>moves (list): stores coordinates of all possible fields where object can move </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+pieces.py</section>
+</section>

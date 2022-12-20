@@ -1,0 +1,904 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1_game" xml:lang="en-US">
+<title>game.Game Class Reference</title>
+<indexterm><primary>game.Game</primary></indexterm>
+<para>
+
+<para>Main class handling gameplay, user interactions and graphic events. </para>
+ 
+</para>
+<para>Inheritance diagram for game.Game:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1_game.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a3564b3d537c1abee7c780767d37215da"/>def <emphasis role="strong">__init__</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1ac6319d2949a2ccdda6c9ca998a2e159c"/>def <emphasis role="strong">chosen_piece</emphasis> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1a5c0c63d6c33b34da6803783229e8d087">chosen_piece</link> (self, chosen_piece)</para>
+
+<para>Set chosen_piece. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1ad04d9a041cbb74988958798203426b62">play_sound</link> (self, sound)</para>
+
+<para>Creates new thread. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1ae17ea5b40aa356375c14b0c6d390b22f">play_sound_thread</link> (self, sound)</para>
+
+<para>Target function for thread. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1a1939c1384f96d8ed90ceb2bca4537f13">draw_chosen_board</link> (self, board_nr)</para>
+
+<para>Draws chosen board. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a91908a43076016c7ca81e911adc99717"/>def <emphasis role="strong">refresh_buttons</emphasis> (self)</para>
+
+<para>checks if prev and next buttons are available to click. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1af578e7f36984f83f8ce5cde9fee9fcd4"/>def <emphasis role="strong">set_piece</emphasis> (self, y, x, piece, color, win)</para>
+
+<para>assigns given piece to given place. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a7525e40d4a63ec652feb35a67c80e72f"/>def <emphasis role="strong">set_starting_position</emphasis> (self)</para>
+
+<para>assings all piece to their starting places. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1a9570b59660e5eb46e5f3ed0a1d9f0f01">draw_board</link> (self)</para>
+
+<para>Draws board (backround). </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a1e6cf5314b0acc68407c9c10948aacb8"/>def <emphasis role="strong">draw_pieces</emphasis> (self)</para>
+
+<para>Draws all piece that are set on the board. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1a0d3d754046d0443e71a23bcab01ada23">draw_menu</link> (self)</para>
+
+<para>Draws sepparating line. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1ab7fc4fb7e6cc610743a409342c982cb0"/>def <emphasis role="strong">find_all_moves</emphasis> (self)</para>
+
+<para>Finds every move of all pieces on the board assings them to accordingpieces. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a7af01eb52871dba5c3c095bb073e4edc"/>def <emphasis role="strong">draw_chosen_piece_moves</emphasis> (self)</para>
+
+<para>Draws moves of chosen piece on the board. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a96572133fb03cce9b54f07a48eded99a"/>def <emphasis role="strong">undraw_chosen_piece_moves</emphasis> (self)</para>
+
+<para>Undraws moves of chosen piece from the board. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1a255c9faae192fef88121af999e693746">make_move</link> (self, x, y)</para>
+
+<para>Checks if square that player clicked on is square on which chosen piece can move, if so it execute that move. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1a7d81caad70b5dcfc8b7106449ea621f0">change_turn</link> (self)</para>
+
+<para>Changes turn to the opposite. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1affeeb35aba3d7b7abab7b491b75729a3">move_piece</link> (self, y, x, piece_to_move)</para>
+
+<para>Changes places of piece in the board. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1a3fe40b5a44d95bb481a6973f14a3ed87">take_piece</link> (self, y, x)</para>
+
+<para>Removes taken piece. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1a60087818235f09ce5658787343e4c7b7">castle_short</link> (self, y, x)</para>
+
+<para>Move piece of short castling. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1a5a61278422696821efdefb77255e7f0c">castle_long</link> (self, y, x)</para>
+
+<para>Move piece of long castling. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1a77fd40b2e6ab371a0300fcb89f495343">wait_for_input</link> (self)</para>
+
+<para>Waits for mouse input. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1ab27c17c50109b536bb990be2d1e836ab">restore</link> (self, board_nr)</para>
+
+<para>Restores board of given number. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1a77c44861e08406b08a05e147e837d90a">px_to_index</link> (self, value)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a748e20ab59b2e52ad38c83882759a838"/>def <emphasis role="strong">undraw_moves</emphasis> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1a235b83869bd65b53781481afe8cf9492">insufficient_material</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1ad51f361bd5dce7979b910f432653be77">fifty_moves_rule</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1ac5a70dae0df172730181a809e5e92f62">endgame_window</link> (self, text, draw)</para>
+
+<para>Pops up the endgame window. </para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1a71620983e80bc9f11cbef58d764208a1">threefold_repetition</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1aae32faa685c696f80b15d172d9ddfe53">compare_boards</link> (self, i)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classgame_1_1_game_1ad573043406e6bc5f47899737c3779360">deepcopy</link> (self, board)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a6896e5c966a6e7d0f64c72d0a3970d91"/>def <emphasis role="strong">mege_print</emphasis> (self, board)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a3a4bf4559e8e7d988b2582ef66e9cefd"/>def <emphasis role="strong">__str__</emphasis> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1aa4b0ca3dacbb85d96595f6da4afa7e32"/><emphasis role="strong">mega_board</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1aebe3d53b7d67e752a35a26d18536c4fa"/><emphasis role="strong">board</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1ade69a44217c166ce5a01c9e684f30567"/><emphasis role="strong">chosen_piece_highlight</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a0af3b7b5190cd01a8b5de078c1b29d65"/><emphasis role="strong">win</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a0911d4b5dae4d41f12ab75d3b35831d3"/><emphasis role="strong">eg_window</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1ad6cac84b5956b719deb8c1bde6a356d9"/><emphasis role="strong">turn</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1aaf2265e9b6885de5e939ea9943c4e30f"/><emphasis role="strong">pieces</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a076abfb107e487ad75fbcf56f446b910"/><emphasis role="strong">prevButton</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a929742cf1559fa1037199e8f9bbbe864"/><emphasis role="strong">nextButton</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a1d5309595ff60583b71bdae94ec00cc6"/><emphasis role="strong">RestorePosition</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1ab75d89c5e723a676bef3df1e7146fc2a"/><emphasis role="strong">NewGameButton</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1ac9bfcb53366bc272b7a6964b9da2749e"/><emphasis role="strong">c_board_nr</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a9e8619652e51af2cf5f3a2f3a25a809c"/><emphasis role="strong">lp_reps</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a9eee6e48f7a739692c2a2238b31bf6a8"/><emphasis role="strong">moves_no_take</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1aff693e242db204d965df27bec99a390f"/><emphasis role="strong">chosen_piece</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1adcf47ea848cbbd3495b31184d54cc412"/><emphasis role="strong">dark_sqaures_color</emphasis> = color_rgb(152, 6, 171)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1aa58e6fcefcfa4e0863a75cb5bbdb5139"/><emphasis role="strong">light_sqaures_color</emphasis> = color_rgb(216, 162, 223)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a4598171ad90c0f68ca5aceb50ee5f421"/><emphasis role="strong">buttons_color</emphasis> = color_rgb(240, 152, 251)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a5c7c84d0a829858ee3b1e82ffb98324a"/>string <emphasis role="strong">move_sound</emphasis> = &apos;sounds/move.wav&apos;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a1d6060c0caa9ca8005cfc467226c6120"/>string <emphasis role="strong">choise_sound</emphasis> = &apos;sounds/choise.wav&apos;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a899bf94f00581d50ce92ce65ace46a28"/>string <emphasis role="strong">take_sound</emphasis> = &apos;sounds/take.wav&apos;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a67c77830c7cc015de2ae0603d177662e"/>string <emphasis role="strong">error_sound</emphasis> = &apos;sounds/error.wav&apos;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a244125324f144576ebd0dbcf1524acdc"/>string <emphasis role="strong">restore_sound</emphasis> = &apos;sounds/restore.wav&apos;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgame_1_1_game_1a5ac286be642cae804d0c916adeb4a871"/>string <emphasis role="strong">end_sound</emphasis> = &apos;sounds/end.wav&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Main class handling gameplay, user interactions and graphic events. </para>
+
+
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dark_sqaures_color</entry><entry>
+<para>(str): color specifier string for dark sqaures color </para>
+</entry>
+                            </row>
+                            <row>
+<entry>light_sqaures_color</entry><entry>
+<para>(str): color specifier string for light sqaures color </para>
+</entry>
+                            </row>
+                            <row>
+<entry>buttons_color</entry><entry>
+<para>(str): color specifier string for buttons color</para>
+</entry>
+                            </row>
+                            <row>
+<entry>move_sound</entry><entry>
+<para>(str): stores path to move sound </para>
+</entry>
+                            </row>
+                            <row>
+<entry>choise_sound</entry><entry>
+<para>(str): stores path to choise sound </para>
+</entry>
+                            </row>
+                            <row>
+<entry>take_sound</entry><entry>
+<para>(str): stores path to take sound </para>
+</entry>
+                            </row>
+                            <row>
+<entry>error_sound</entry><entry>
+<para>(str): stores path to error sound </para>
+</entry>
+                            </row>
+                            <row>
+<entry>restore_sound</entry><entry>
+<para>(str): stores path to restore sound</para>
+</entry>
+                            </row>
+                            <row>
+<entry>win</entry><entry>
+<para>(<link linkend="_classgraphics_1_1_graph_win">graphics.GraphWin</link>): window in which game is displayed </para>
+</entry>
+                            </row>
+                            <row>
+<entry>mega_board</entry><entry>
+<para>(list): all previous board states </para>
+</entry>
+                            </row>
+                            <row>
+<entry>board</entry><entry>
+<para>(list): current board state </para>
+</entry>
+                            </row>
+                            <row>
+<entry>chosen_piece</entry><entry>
+<para>(Piece): piece that set_starting_position clicked on </para>
+</entry>
+                            </row>
+                            <row>
+<entry>chosen_piece_highlight</entry><entry>
+<para>(<link linkend="_classgraphics_1_1_rectangle">graphics.Rectangle</link>): sqaure that marks chosen piece </para>
+</entry>
+                            </row>
+                            <row>
+<entry>eg_window</entry><entry>
+<para>(<link linkend="_classgraphics_1_1_graph_win">graphics.GraphWin</link>): window which pop up when the game ends </para>
+</entry>
+                            </row>
+                            <row>
+<entry>turn</entry><entry>
+<para>(str): color of player which turn it currently is </para>
+</entry>
+                            </row>
+                            <row>
+<entry>pieces</entry><entry>
+<para>(dict): stores all pieces according to color</para>
+</entry>
+                            </row>
+                            <row>
+<entry>prevButton</entry><entry>
+<para>(Button): button used to rewind moves </para>
+</entry>
+                            </row>
+                            <row>
+<entry>nextButton</entry><entry>
+<para>(Button): button used to forward moves </para>
+</entry>
+                            </row>
+                            <row>
+<entry>RestorePosition</entry><entry>
+<para>(Button): button used to Restore position </para>
+</entry>
+                            </row>
+                            <row>
+<entry>NewGameButton</entry><entry>
+<para>(Button): button used to iniciate new game</para>
+</entry>
+                            </row>
+                            <row>
+<entry>c_board_nr</entry><entry>
+<para>(int): index of currently diplayed board </para>
+</entry>
+                            </row>
+                            <row>
+<entry>lp_reps</entry><entry>
+<para>(list): list of numbers indicating on which move last possible repetition could have occured </para>
+</entry>
+                            </row>
+                            <row>
+<entry>moves_no_take</entry><entry>
+<para>(int): number of moves in row whithout taking </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1_game_1a5a61278422696821efdefb77255e7f0c"/><section>
+    <title>castle_long()</title>
+<indexterm><primary>castle_long</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>castle_long</secondary></indexterm>
+<para><computeroutput>def game.Game.castle_long ( self,  y,  x)</computeroutput></para><para>
+
+<para>Move piece of long castling. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x</entry><entry>
+<para>(int): horizontal cooridante of the king </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y</entry><entry>
+<para>(int): vertical cooridante of the king </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1a60087818235f09ce5658787343e4c7b7"/><section>
+    <title>castle_short()</title>
+<indexterm><primary>castle_short</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>castle_short</secondary></indexterm>
+<para><computeroutput>def game.Game.castle_short ( self,  y,  x)</computeroutput></para><para>
+
+<para>Move piece of short castling. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x</entry><entry>
+<para>(int): horizontal cooridante of the king </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y</entry><entry>
+<para>(int): vertical cooridante of the king </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1a7d81caad70b5dcfc8b7106449ea621f0"/><section>
+    <title>change_turn()</title>
+<indexterm><primary>change_turn</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>change_turn</secondary></indexterm>
+<para><computeroutput>def game.Game.change_turn ( self)</computeroutput></para><para>
+
+<para>Changes turn to the opposite. </para>
+</para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1a5c0c63d6c33b34da6803783229e8d087"/><section>
+    <title>chosen_piece()</title>
+<indexterm><primary>chosen_piece</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>chosen_piece</secondary></indexterm>
+<para><computeroutput>def game.Game.chosen_piece ( self,  chosen_piece)</computeroutput></para><para>
+
+<para>Set chosen_piece. </para>
+</para>
+
+<para>Assigns and unassings highlight to chosen piece.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>chosen_piece</entry><entry>
+<para>(Piece): piece clicked on by player </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1aae32faa685c696f80b15d172d9ddfe53"/><section>
+    <title>compare_boards()</title>
+<indexterm><primary>compare_boards</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>compare_boards</secondary></indexterm>
+<para><computeroutput>def game.Game.compare_boards ( self,  i)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>i</entry><entry>
+<para>(int): number of board that will be compared to current</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>True if the compared boards were the same </para>
+
+<para>False if not </para>
+
+<para>Kill (str): if spotted a board state that cannot be repeated </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1ad573043406e6bc5f47899737c3779360"/><section>
+    <title>deepcopy()</title>
+<indexterm><primary>deepcopy</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>deepcopy</secondary></indexterm>
+<para><computeroutput>def game.Game.deepcopy ( self,  board)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>board</entry><entry>
+<para>(list): board that will be deepcopied</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>list: deepcopied board </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1a9570b59660e5eb46e5f3ed0a1d9f0f01"/><section>
+    <title>draw_board()</title>
+<indexterm><primary>draw_board</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>draw_board</secondary></indexterm>
+<para><computeroutput>def game.Game.draw_board ( self)</computeroutput></para><para>
+
+<para>Draws board (backround). </para>
+</para>
+
+<para>Draws fields legend. </para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1a1939c1384f96d8ed90ceb2bca4537f13"/><section>
+    <title>draw_chosen_board()</title>
+<indexterm><primary>draw_chosen_board</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>draw_chosen_board</secondary></indexterm>
+<para><computeroutput>def game.Game.draw_chosen_board ( self,  board_nr)</computeroutput></para><para>
+
+<para>Draws chosen board. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>board_nr</entry><entry>
+<para>(int): number of the board to be drawn </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1a0d3d754046d0443e71a23bcab01ada23"/><section>
+    <title>draw_menu()</title>
+<indexterm><primary>draw_menu</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>draw_menu</secondary></indexterm>
+<para><computeroutput>def game.Game.draw_menu ( self)</computeroutput></para><para>
+
+<para>Draws sepparating line. </para>
+</para>
+
+<para>Draws all buttons in menu. </para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1ac5a70dae0df172730181a809e5e92f62"/><section>
+    <title>endgame_window()</title>
+<indexterm><primary>endgame_window</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>endgame_window</secondary></indexterm>
+<para><computeroutput>def game.Game.endgame_window ( self,  text,  draw)</computeroutput></para><para>
+
+<para>Pops up the endgame window. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>text</entry><entry>
+<para>(str): text that will be displayed in endgame window </para>
+</entry>
+                            </row>
+                            <row>
+<entry>draw</entry><entry>
+<para>(bool): True if game ended in a draw </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1ad51f361bd5dce7979b910f432653be77"/><section>
+    <title>fifty_moves_rule()</title>
+<indexterm><primary>fifty_moves_rule</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>fifty_moves_rule</secondary></indexterm>
+<para><computeroutput>def game.Game.fifty_moves_rule ( self)</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>True if there was 50 moves without taking or moving pawn in row </para>
+
+<para>False if not </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1a235b83869bd65b53781481afe8cf9492"/><section>
+    <title>insufficient_material()</title>
+<indexterm><primary>insufficient_material</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>insufficient_material</secondary></indexterm>
+<para><computeroutput>def game.Game.insufficient_material ( self)</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>True if there is insufficient material on the board to win @reutrn False if not </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1a255c9faae192fef88121af999e693746"/><section>
+    <title>make_move()</title>
+<indexterm><primary>make_move</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>make_move</secondary></indexterm>
+<para><computeroutput>def game.Game.make_move ( self,  x,  y)</computeroutput></para><para>
+
+<para>Checks if square that player clicked on is square on which chosen piece can move, if so it execute that move. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x</entry><entry>
+<para>(int): horizontal coordinate of clicked square </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y</entry><entry>
+<para>(int): vertical coordinate of clicked square</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>True if square that player clicked on is square on which chosen piece can move @reutrn False if not </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1affeeb35aba3d7b7abab7b491b75729a3"/><section>
+    <title>move_piece()</title>
+<indexterm><primary>move_piece</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>move_piece</secondary></indexterm>
+<para><computeroutput>def game.Game.move_piece ( self,  y,  x,  piece_to_move)</computeroutput></para><para>
+
+<para>Changes places of piece in the board. </para>
+</para>
+
+<para>Initiate move_piece for the piece (changing coordinates). Decects if promotion occurs and iniciate it. If moved piece is Rook or King assings on which move it was moved (declaining castle rights).</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>piece_to_move</entry><entry>
+<para>(piece): piece that designated to move </para>
+</entry>
+                            </row>
+                            <row>
+<entry>x</entry><entry>
+<para>(int): piece will move to this cooridante </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y</entry><entry>
+<para>(int): piece will move to this cooridante </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1ad04d9a041cbb74988958798203426b62"/><section>
+    <title>play_sound()</title>
+<indexterm><primary>play_sound</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>play_sound</secondary></indexterm>
+<para><computeroutput>def game.Game.play_sound ( self,  sound)</computeroutput></para><para>
+
+<para>Creates new thread. </para>
+</para>
+
+<para>Plays sounds in the new thread.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>sound</entry><entry>
+<para>(str): path to chosen sounds </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1ae17ea5b40aa356375c14b0c6d390b22f"/><section>
+    <title>play_sound_thread()</title>
+<indexterm><primary>play_sound_thread</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>play_sound_thread</secondary></indexterm>
+<para><computeroutput>def game.Game.play_sound_thread ( self,  sound)</computeroutput></para><para>
+
+<para>Target function for thread. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>sound</entry><entry>
+<para>(str): path to chosen sounds </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1a77c44861e08406b08a05e147e837d90a"/><section>
+    <title>px_to_index()</title>
+<indexterm><primary>px_to_index</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>px_to_index</secondary></indexterm>
+<para><computeroutput>def game.Game.px_to_index ( self,  value)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>value</entry><entry>
+<para>(int, float): value in pixels</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>int: value of index containing given pixel value </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1ab27c17c50109b536bb990be2d1e836ab"/><section>
+    <title>restore()</title>
+<indexterm><primary>restore</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>restore</secondary></indexterm>
+<para><computeroutput>def game.Game.restore ( self,  board_nr)</computeroutput></para><para>
+
+<para>Restores board of given number. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>board_nr</entry><entry>
+<para>(int): number of the board to be restored </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1a3fe40b5a44d95bb481a6973f14a3ed87"/><section>
+    <title>take_piece()</title>
+<indexterm><primary>take_piece</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>take_piece</secondary></indexterm>
+<para><computeroutput>def game.Game.take_piece ( self,  y,  x)</computeroutput></para><para>
+
+<para>Removes taken piece. </para>
+</para>
+
+<para>Resets moves without taking counter.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>piece_to_move</entry><entry>
+<para>(piece): piece that designated to move </para>
+</entry>
+                            </row>
+                            <row>
+<entry>x</entry><entry>
+<para>(int): horizontal cooridante of piece that will be removed </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y</entry><entry>
+<para>(int): vertical cooridante of piece that will be removed </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1a71620983e80bc9f11cbef58d764208a1"/><section>
+    <title>threefold_repetition()</title>
+<indexterm><primary>threefold_repetition</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>threefold_repetition</secondary></indexterm>
+<para><computeroutput>def game.Game.threefold_repetition ( self)</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>True if there is the position was repeted 3 times </para>
+
+<para>False if not </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classgame_1_1_game_1a77fd40b2e6ab371a0300fcb89f495343"/><section>
+    <title>wait_for_input()</title>
+<indexterm><primary>wait_for_input</primary><secondary>game.Game</secondary></indexterm>
+<indexterm><primary>game.Game</primary><secondary>wait_for_input</secondary></indexterm>
+<para><computeroutput>def game.Game.wait_for_input ( self)</computeroutput></para><para>
+
+<para>Waits for mouse input. </para>
+</para>
+
+<para>Acts accordingly to input. </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+game.py</section>
+</section>

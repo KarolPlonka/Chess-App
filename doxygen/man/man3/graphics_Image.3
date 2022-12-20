@@ -1,0 +1,132 @@
+.TH "graphics.Image" 3 "Mon Dec 19 2022" "Chess App" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+graphics.Image
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBgraphics\&.GraphicsObject\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, p, *pixmap)"
+.br
+.ti -1c
+.RI "def \fB__repr__\fP (self)"
+.br
+.ti -1c
+.RI "def \fBundraw\fP (self)"
+.br
+.ti -1c
+.RI "def \fBgetAnchor\fP (self)"
+.br
+.ti -1c
+.RI "def \fBclone\fP (self)"
+.br
+.ti -1c
+.RI "def \fBgetWidth\fP (self)"
+.br
+.ti -1c
+.RI "def \fBgetHeight\fP (self)"
+.br
+.ti -1c
+.RI "def \fBgetPixel\fP (self, x, y)"
+.br
+.ti -1c
+.RI "def \fBsetPixel\fP (self, x, y, color)"
+.br
+.ti -1c
+.RI "def \fBsave\fP (self, filename)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBanchor\fP"
+.br
+.ti -1c
+.RI "\fBimageId\fP"
+.br
+.ti -1c
+.RI "\fBimg\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBidCount\fP = 0"
+.br
+.ti -1c
+.RI "dictionary \fBimageCache\fP = {}"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def graphics\&.Image\&.__init__ ( self,  p, * pixmap)"
+
+.PP
+Reimplemented from \fBgraphics\&.GraphicsObject\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def graphics\&.Image\&.getHeight ( self)"
+
+.PP
+.nf
+Returns the height of the image in pixels
+.fi
+.PP
+ 
+.SS "def graphics\&.Image\&.getPixel ( self,  x,  y)"
+
+.PP
+.nf
+Returns a list [r,g,b] with the RGB color values for pixel (x,y)
+r,g,b are in range(256)
+.fi
+.PP
+ 
+.SS "def graphics\&.Image\&.getWidth ( self)"
+
+.PP
+.nf
+Returns the width of the image in pixels
+.fi
+.PP
+ 
+.SS "def graphics\&.Image\&.save ( self,  filename)"
+
+.PP
+.nf
+Saves the pixmap image to filename\&.
+The format for the save image is determined from the filname extension\&.
+.fi
+.PP
+ 
+.SS "def graphics\&.Image\&.setPixel ( self,  x,  y,  color)"
+
+.PP
+.nf
+Sets pixel (x,y) to the given color
+.fi
+.PP
+ 
+.SS "def graphics\&.Image\&.undraw ( self)"
+
+.PP
+.nf
+Undraw the object (i\&.e\&. hide it)\&. Returns silently if the
+object is not currently drawn\&.
+.fi
+.PP
+ 
+.PP
+Reimplemented from \fBgraphics\&.GraphicsObject\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chess App from the source code\&.

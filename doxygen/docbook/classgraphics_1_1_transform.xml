@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgraphics_1_1_transform" xml:lang="en-US">
+<title>graphics.Transform Class Reference</title>
+<indexterm><primary>graphics.Transform</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_transform_1a826600468986f5938247b1a09dc89097"/>def <emphasis role="strong">__init__</emphasis> (self, w, h, xlow, ylow, xhigh, yhigh)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_transform_1a52ce3f42703299dcf57d65dbdf856ccc"/>def <emphasis role="strong">screen</emphasis> (self, x, y)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_transform_1adaa57283f32d487d122a5cae919ce1e8"/>def <emphasis role="strong">world</emphasis> (self, xs, ys)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_transform_1af43d705e45fda80627425215440a0394"/><emphasis role="strong">xbase</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_transform_1a56bedbb5d2c98e6bf4f1ac28b77688d5"/><emphasis role="strong">ybase</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_transform_1aa5d63ba571985d5d70ee661b7e84646f"/><emphasis role="strong">xscale</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classgraphics_1_1_transform_1aad8322957fc2e0f6b445440f04150c1d"/><emphasis role="strong">yscale</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Internal class for 2-D coordinate transformations</computeroutput></literallayout> </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+graphics.py</section>
+</section>

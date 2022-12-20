@@ -1,0 +1,192 @@
+.TH "pieces.Pawn" 3 "Mon Dec 19 2022" "Chess App" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pieces.Pawn \- stores properities of \fBPawn\fP, inherits form \fBPiece\fP class  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBpieces\&.Piece\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, color, y, x, win)"
+.br
+.ti -1c
+.RI "def \fBmove_piece\fP (self, y, x, board=None)"
+.br
+.RI "moves piece img using move() method, changes actual coordinates and checks if current move is leading to promotion "
+.ti -1c
+.RI "def \fBall_moves\fP (self, board, prev_board=None, check_king_safety=True)"
+.br
+.RI "Creates list of all possible moves that \fBPawn\fP object can make\&. "
+.ti -1c
+.RI "def \fBmove_forward\fP (self, board)"
+.br
+.RI "Returns list of all possible moves that \fBPawn\fP object can make in vertical direction\&. "
+.ti -1c
+.RI "def \fBtake_diagonal\fP (self, board)"
+.br
+.RI "Returns list of all possible take moves of \fBPawn\fP\&. "
+.ti -1c
+.RI "def \fBen_passant\fP (self, board, prev_board)"
+.br
+.ti -1c
+.RI "def \fBpromotion\fP (self, board)"
+.br
+.ti -1c
+.RI "def \fB__str__\fP (self)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBcolor\fP"
+.br
+.ti -1c
+.RI "\fBimg_url\fP"
+.br
+.ti -1c
+.RI "\fBx\fP"
+.br
+.ti -1c
+.RI "\fBy\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBwhite_img_url\fP = 'pieces/w_pawn_png_shadow_128px\&.png'"
+.br
+.ti -1c
+.RI "string \fBblack_img_url\fP = 'pieces/b_pawn_png_shadow_128px\&.png'"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+stores properities of \fBPawn\fP, inherits form \fBPiece\fP class 
+
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIwhite_img_url\fP (str): path to white \fBPawn\fP png 
+.br
+\fIblack_img_url\fP (str): path to black \fBPawn\fP png 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pieces\&.Pawn\&.__init__ ( self,  color,  y,  x,  win)"
+
+.PP
+Reimplemented from \fBpieces\&.Piece\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def pieces\&.Pawn\&.all_moves ( self,  board,  prev_board = \fCNone\fP,  check_king_safety = \fCTrue\fP)"
+
+.PP
+Creates list of all possible moves that \fBPawn\fP object can make\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fP board (list): stores all pieces in appropiate fields 
+.br
+\fI\fP prev_board (list): previous state of board (list) 
+.br
+\fI\fP check_king_safety (bool): information about king safety
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+moves (list): stores coordinates of all possible fields where object can move 
+.RE
+.PP
+
+.SS "def pieces\&.Pawn\&.en_passant ( self,  board,  prev_board)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fP board (list): stores all pieces in appropiate fields 
+.br
+\fI\fP prev_board (list): previous state of board (list)
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+moves (list): field where \fBPawn\fP object can be after en passant move 
+.RE
+.PP
+
+.SS "def pieces\&.Pawn\&.move_forward ( self,  board)"
+
+.PP
+Returns list of all possible moves that \fBPawn\fP object can make in vertical direction\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fP board (list): stores all pieces in appropiate fields
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(list): all possible moves that \fBPawn\fP object can make in vertical direction 
+.RE
+.PP
+
+.SS "def pieces\&.Pawn\&.move_piece ( self,  y,  x,  board = \fCNone\fP)"
+
+.PP
+moves piece img using move() method, changes actual coordinates and checks if current move is leading to promotion 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fP y (int): vertical coordinate of where piece should be moved 
+.br
+\fI\fP x (int): horizontal coordinate of piece should be moved 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBpieces\&.Piece\fP\&.
+.SS "def pieces\&.Pawn\&.promotion ( self,  board)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fP board (list): stores all pieces in appropiate fields
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+moves (list): field where \fBPawn\fP object can be after promotion move 
+.RE
+.PP
+
+.SS "def pieces\&.Pawn\&.take_diagonal ( self,  board)"
+
+.PP
+Returns list of all possible take moves of \fBPawn\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fP board (list): stores all pieces in appropiate fields
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+moves (list): all possible moves that \fBPawn\fP object can make in diagonal direction 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chess App from the source code\&.

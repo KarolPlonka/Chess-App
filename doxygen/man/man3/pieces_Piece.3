@@ -1,0 +1,185 @@
+.TH "pieces.Piece" 3 "Mon Dec 19 2022" "Chess App" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pieces.Piece \- abstract class, where from every piece class inherits  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBpieces\&.Bishop\fP, \fBpieces\&.King\fP, \fBpieces\&.Knight\fP, \fBpieces\&.Pawn\fP, and \fBpieces\&.Rook\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, color, y, x, win)"
+.br
+.ti -1c
+.RI "def \fBcolor\fP (self)"
+.br
+.ti -1c
+.RI "def \fBcolor\fP (self, color)"
+.br
+.RI "sets value of color "
+.ti -1c
+.RI "def \fBdraw_piece\fP (self, y=None, x=None)"
+.br
+.RI "undraws piece using draw() method from graphics\&.py "
+.ti -1c
+.RI "def \fBundraw_piece\fP (self)"
+.br
+.RI "undraws piece using undraw() method from graphics\&.py "
+.ti -1c
+.RI "def \fBmove_piece\fP (self, y, x)"
+.br
+.RI "moves piece img using move() method, changes actual coordinates "
+.ti -1c
+.RI "def \fBcheck_moves_king_safety\fP (self, moves, board)"
+.br
+.RI "Description: returns all moves after which king is safe\&. "
+.ti -1c
+.RI "def \fBking_safe\fP (self, m_y, m_x, board)"
+.br
+.RI "checks if after given move the king cannot be taken "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBcolor\fP"
+.br
+.ti -1c
+.RI "\fBimg_url\fP"
+.br
+.ti -1c
+.RI "\fBy\fP"
+.br
+.ti -1c
+.RI "\fBx\fP"
+.br
+.ti -1c
+.RI "\fBimg\fP"
+.br
+.ti -1c
+.RI "\fBwin\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBpormotion_bg_color\fP = color_rgb(244, 181, 252)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+abstract class, where from every piece class inherits 
+
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIpormotion_bg_color\fP (str): color specifier string for backgroud of poromition window
+.br
+\fIcolor\fP (str): color of the piece 'black' or 'white' 
+.br
+\fIimg_url\fP (str): path to piece png file 
+.br
+\fIy\fP (int): vertical coordinate of piece 
+.br
+\fIx\fP (int): horizontal coordinate of piece 
+.br
+\fIwin\fP (GraphWin): window in which game is displayed 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def pieces\&.Piece\&.check_moves_king_safety ( self,  moves,  board)"
+
+.PP
+Description: returns all moves after which king is safe\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImoves\fP (list): consisting of coordinates of piece possible moves 
+.br
+\fIboard\fP (list): stores all pieces in appropiate fields 
+.RE
+.PP
+
+.SS "def pieces\&.Piece\&.color ( self,  color)"
+
+.PP
+sets value of color 
+.SS "def pieces\&.Piece\&.draw_piece ( self,  y = \fCNone\fP,  x = \fCNone\fP)"
+
+.PP
+undraws piece using draw() method from graphics\&.py 
+.PP
+\fBParameters\fP
+.RS 4
+\fIy\fP (int): vertical coordinate of piece 
+.br
+\fIx\fP (int): horizontal coordinate of piece
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIValueError\fP when image is already drawn 
+.RE
+.PP
+
+.SS "def pieces\&.Piece\&.king_safe ( self,  m_y,  m_x,  board)"
+
+.PP
+checks if after given move the king cannot be taken 
+.PP
+\fBParameters\fP
+.RS 4
+\fIm_y\fP (int): vertical coordinate after move is done 
+.br
+\fIm_x\fP (int): horizontal coordinate after move is done 
+.br
+\fIboard\fP (list): stores all pieces in appropiate fields
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if after given move the king cannot be taken 
+.PP
+False if after given move the king can be taken 
+.RE
+.PP
+
+.SS "def pieces\&.Piece\&.move_piece ( self,  y,  x)"
+
+.PP
+moves piece img using move() method, changes actual coordinates 
+.PP
+\fBParameters\fP
+.RS 4
+\fIy\fP (int): vertical coordinate of where piece should be moved 
+.br
+\fIx\fP (int): horizontal coordinate of piece should be moved 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBpieces\&.Pawn\fP\&.
+.SS "def pieces\&.Piece\&.undraw_piece ( self)"
+
+.PP
+undraws piece using undraw() method from graphics\&.py 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIValueError\fP when there is no image to undraw 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chess App from the source code\&.

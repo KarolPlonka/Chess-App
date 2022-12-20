@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbuttons_1_1_button" xml:lang="en-US">
+<title>buttons.Button Class Reference</title>
+<indexterm><primary>buttons.Button</primary></indexterm>
+<para>
+
+<para>Abstarct class for all buttons the inherit from. </para>
+ 
+</para>
+<para>Inheritance diagram for buttons.Button:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbuttons_1_1_button.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1a07d63eb1e9ab616ff41a76b37fe62cf5"/>def <emphasis role="strong">__init__</emphasis> (self, win, c1, c2, size, m, start_x, start_y)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1a1f074c18d3ff98de7d64ead726b6e415"/>def <emphasis role="strong">buttons_type</emphasis> (self, type)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1ad427d7add0ce2d812472dc9e57ac0b78"/>def <emphasis role="strong">deactivate</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1add4c6867dd8e65f6fab7a0f051e65edd"/>def <emphasis role="strong">activate</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1af5de6bda4eace5e60e5295dfb350bd29"/>def <emphasis role="strong">draw_button</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1a3c12b2ad65f5c503638fb62546f3c56c"/>def <emphasis role="strong">button_parameters</emphasis> (self)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1a2dccc2775c724a02f4031eccbe2cdaa5"/>def <emphasis role="strong">clicked</emphasis> (self, click_x, click_y)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1a651942d9d08ddf976861235145a38762"/><emphasis role="strong">win</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1a279697edd3c881e1cac252c867901d30"/><emphasis role="strong">c1</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1ad21322487f2b8821b8b1305517392dab"/><emphasis role="strong">c2</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1a6ce0dd42ebf7258421a10dd63c0214dc"/><emphasis role="strong">is_active</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1aa03451d39fcac1e53d1ea86f4c9ebede"/><emphasis role="strong">size</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1a2c13930a669a5ad104b55687b9b7b882"/><emphasis role="strong">m</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1abe6323407232ace3a75e70ba604982c1"/><emphasis role="strong">start_x</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1ae9d6b1df1ebe033c19628ee2e1cc2c90"/><emphasis role="strong">start_y</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classbuttons_1_1_button_1a8f0f51532b352a8e06539bcfbc665177"/><emphasis role="strong">disabled_color</emphasis> = color_rgb(116, 100, 116)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Abstarct class for all buttons the inherit from. </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+buttons.py</section>
+</section>
